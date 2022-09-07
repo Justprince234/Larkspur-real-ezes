@@ -1,0 +1,110 @@
+:root {
+    --Hcolor: #eb0a0a;
+}
+
+
+a {
+    color: var(--Hcolor);
+}
+
+li>a {
+    color: var(--Hcolor);
+}
+
+li>a:hover {
+    color: var(--Hcolor) !important;
+}
+
+li.active>a {
+    color: var(--Hcolor) !important;
+}
+
+#header #primary-menu>ul>li>a:hover {
+    color: var(--Hcolor) !important;
+}
+
+#primary-menu ul ul:not(.mega-menu-column) {
+    border-top-color: var(--Hcolor) !important;
+}
+
+#header #top-menu li:not(.menu-icon) a:hover {
+    color: var(--Hcolor) !important;
+}
+
+#footer.ev-footer #copyrights .social-media ul li i:hover {
+    color: var(--Hcolor) !important
+}
+
+#search-results .pagination ul li.active a {
+    background-color: var(--Hcolor);
+    color: white !important;
+}
+
+#search-results .pagination ul li.active a:hover {
+    background-color: var(--Hcolor) !important;
+}
+
+#search-results .pagination ul li a {
+    color: #444444 !important;
+}
+
+
+#search-market-result .row .pagination ul li.active a {
+    background-color: var(--Hcolor) !important;
+    color: white !important
+}
+
+#search-market-result .row .pagination ul li.active a:hover {
+    background-color: var(--Hcolor) !important;
+    color: white !important
+}
+
+
+.number-item > h2 {
+    font-weight: 700 !important;
+}
+
+
+.mgm {
+    border-radius: 7px;
+    position: fixed;
+    top: 1rem;
+    z-index: 200;
+    height: fit-content;
+    width: fit-content;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+    padding: 10px 27px;
+    box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
+}
+
+.mgm a {
+    font-weight: 700;
+    display: block;
+    color: #f2d516;
+}
+
+.mgm a,
+.mgm a:active {
+    transition: all .2s ease;
+    color: #f2d516;
+}
+
+
+.brand-row {
+    background-color: #f0f0f0;
+    height: fit-content;
+    padding: 5rem 0;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.brand-links {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
