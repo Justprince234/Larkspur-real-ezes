@@ -66,7 +66,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -95,9 +95,9 @@ DATABASES = {
 
 # Cloudinary stuff
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': str(os.getenv("CLOUD_NAME")),
-    'API_KEY': str(os.getenv("API_KEY")),
-    'API_SECRET': str(os.getenv("API_SECRET"))
+    'CLOUD_NAME': "dhbq8xygi",
+    'API_KEY': "566134837451328",
+    'API_SECRET': "pr166kz5mEMew7AzzPP3er1ws_0"
 }
 
 # Password validation
@@ -135,16 +135,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR /'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'photos/')
 MEDIA_URL = '/photos/'
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

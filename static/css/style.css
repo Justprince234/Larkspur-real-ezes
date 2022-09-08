@@ -1427,6 +1427,12 @@ body {
     background-color: #fff
 }
 
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+}
+
 .glyphicon {
     position: relative;
     top: 1px;
@@ -22594,7 +22600,8 @@ button.toast-close-button {
 
 .footer-logo {
     display: block;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .table .success {
@@ -32934,7 +32941,8 @@ only screen and (min-resolution: 2dppx) and (max-width: 991px) {
 #footer.ev-footer #footer-logo {
     text-align: center;
     background-color: white;
-    margin-bottom: 0 !important
+    margin-bottom: 0 !important;
+    position: relative;
 }
 
 #footer.ev-footer .copyright-links.footer {

@@ -1,0 +1,1072 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en' prefix='og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'>
+
+    <head itemscope itemtype='http://schema.org/WebSite'>
+        <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+        <meta name="csrf-param" content="authenticity_token" />
+        <meta name="csrf-token"
+        content="p7aB+emgdc8/v1w+E/5lhHOBDCBL+jTpzbEaI4I4joeU0482fMjZecoMwziS3IrzCdBcRrK8MT+10XO4Ssi1mQ==" />
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+            <meta content='Search for  luxury real estate homes for sale and real estate information at Larkspur homes LLC.'
+            name='description'>
+            <meta content='luxury real estate homes for sale, luxury real estate properties, real estate' name='keywords'>
+            <meta content='/images/upload/v1616022937/ulfrj4tqdfhrghnqjoue.png'
+            property='og:image'>
+            <title itemprop='name'> Larkspur homes LLC</title>
+            
+            <link rel="stylesheet" media="all" href="{% static 'css/style.css' %}" data-turbolinks-track="true" />
+        <link rel="stylesheet" href="{% static 'css/subStyle.css' %}">
+        
+        <link rel="shortcut icon" href="{% static 'images/upload/larkspur.jpeg' %}" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+        <script async src="//jsfiddle.net/aj7Lk2bw/19/"></script>
+    
+        <!-- <script async='' src='https://cdn.iubenda.com/cons/iubenda_cons.js' type='text/javascript'></script>
+        <script src='//cdn.iubenda.com/cs/ccpa/stub.js' type='text/javascript'></script>
+        <script async='' charset='UTF-8' src='//cdn.iubenda.com/cs/iubenda_cs.js' type='text/javascript'></script> -->
+    
+    </head>
+
+<body class='stretched no-transition' data-lang='en'>
+
+        <!-- #header -->
+        <!-- #primary-menu -->
+        <header class='header-top-message white' data-sticky-class='white' data-sticky-offset='130' id='header'>
+           
+            <div class="mgm" style="display: none;">
+                <div class="txt" style="color:black;">Someone from <b></b> just bought <a href="javascript:void(0);"
+                        onclick="javascript:void(0);"></a></div>
+            </div>
+    
+            <div id='header-wrap' style='border-bottom-color: #eb0a0a;'>
+                <div class='container clearfix primary-menu'>
+                    <div id='logo'>
+                        <a class="standard-logo" href="{% url 'core:home' %}">
+                            Larkspur homes LLC
+
+                        </a>
+                    </div>
+                    <nav class='menu-ev' id='primary-menu'>
+                        <!-- #main-menu -->
+                        <ul class='en' id='main-menu'>
+                            <li class=''>
+                                <a href="{% url 'core:properties' %}">Property Listings</a>
+                            </li>
+                            <li class=''>
+                                <a href="{% url 'core:private_listings' %}">Private listings</a>
+                            </li>
+                            <li class=''>
+                                <a href="{% url 'core:advisors' %}">Advisors</a>
+                            </li>
+                            <li class='menu-last'>
+                                <a href="{% url 'core:services' %}">Services</a>
+                            </li>
+                        </ul>
+                        <!-- #top-menu -->
+                        <ul class='en' id='top-menu' style='float:right;'>
+                            <li><a target="_blank"
+                                    href="">Blog</a></li>
+                            <!-- <li><a href="/login">Login</a></li> -->
+                            <li class='menu-icon space'>
+                                <a data-target="#globalPreferences" data-toggle="modal"
+                                    aria-label="Open global preferences modal" href="#globalPreferences">
+                                    <div class='ev-icon-globe'></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id='primary-menu-trigger'>
+                        <i class='ev-icon-hamburger-menu'></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- #primary-menu end -->
+     
+        <!-- #header end -->
+
+        <div class='clearfix'></div>
+        <!-- #content -->
+        <section id='content'>
+            <!-- <div id='search-bar-container'>
+                <form class="simple_form nomargin main_searches_form" action="/advisors" accept-charset="UTF-8"
+                    method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                    <div class="control-group hidden search_suggestion_type">
+                        <div class="controls"><input id="agents-type-search" class="hidden" type="hidden"
+                                name="search[suggestion_type]" /></div>
+                    </div>
+                    <div class='container clearfix' id='search-bar-wrapper'>
+                        <div class='filters basic-filters'>
+                            <div class='filter input location' id='search-suggestions'>
+                                <div class="control-group string optional search_location"><label
+                                        class="string optional control-label filter-label" for="agent-map">Search
+                                        advisors by:</label>
+                                    <div class="controls"><input data-behavior="autocomplete"
+                                            class="string optional js-specific-agent-location-easycomplete no-autocomplete-search js-no-suggestions-msg"
+                                            no_suggestions="No suggestions to show" id="agent-map"
+                                            placeholder="City, state or country" type="text" name="search[location]" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='filter input'>
+                                <div class="control-group string optional search_name"><label
+                                        class="string optional control-label filter-label" for="search_name">Search
+                                        advisors by:</label>
+                                    <div class="controls"><input
+                                            class="string optional full-search-typeahead-by-name no-autocomplete-search js-specialist-name"
+                                            data-prefetch-url=""
+                                            data-url-count="2"
+                                            data-display="[&quot;Last Name:&quot;,&quot;First Name:&quot;]"
+                                            placeholder="First or last Name" type="text" name="search[name]"
+                                            id="search_name" /></div>
+                                </div>
+                            </div>
+                            <div class='action visible-sm visible-xs'>
+                                <button name="button" type="submit"
+                                    class="secondary-button action-button nomargin search-submit-small js-submit-agent-v2"
+                                    aria-label="Search Specialist"><i aria-hidden='true' class='icon-line-search'></i>
+                                </button><button name="button" type="filters"
+                                    class="secondary-button action-button nomargin js-filters-toggle filters-toggle"><i
+                                        aria-hidden='true' class='icon-list2'></i>
+                                </button>
+                            </div>
+                            <div class='filters-px custom-hide-mobile js-filters'>
+                                <div class="control-group hidden search_sort_type">
+                                    <div class="controls"><input class="hidden" type="hidden" name="search[sort_type]"
+                                            id="search_sort_type" /></div>
+                                </div>
+                                <div class="control-group hidden search_order_seed">
+                                    <div class="controls"><input value="104615780157892082332847735308014956550"
+                                            class="hidden" type="hidden" name="search[order_seed]"
+                                            id="search_order_seed" /></div>
+                                </div>
+                                <div class="control-group hidden search_role">
+                                    <div class="controls"><input value="agent" multiple="multiple" class="hidden"
+                                            type="hidden" name="search[role][]" id="search_role" /></div>
+                                </div>
+                                <div class='filter'>
+                                    <div class="control-group select optional search_languages"><label
+                                            class="select optional control-label filter-label"
+                                            for="search_languages">Languages:</label>
+                                        <div class="controls"><input name="search[languages][]" type="hidden"
+                                                value="" /><select multiple="multiple"
+                                                class="select optional selectpicker custom-align-text-button js-multi-selector"
+                                                data-live-search="true" data-none-selected-text="All"
+                                                data-live-search-placeholder="Languages" data-container="#search-bar"
+                                                data-width="100%" name="search[languages][]" id="search_languages">
+                                                <option value="">All</option>
+                                                <option value="6">Afrikaans</option>
+                                                <option value="7">Arabic</option>
+                                                <option value="8">Brazilian Portuguese</option>
+                                                <option value="30">Cantonese</option>
+                                                <option value="36">Catalan</option>
+                                                <option value="9">Croatian</option>
+                                                <option value="10">Czech</option>
+                                                <option value="32">Danish</option>
+                                                <option value="11">Dutch</option>
+                                                <option value="1">English</option>
+                                                <option value="33">Estonian</option>
+                                                <option value="12">Farsi</option>
+                                                <option value="13">Finnish</option>
+                                                <option value="4">French</option>
+                                                <option value="14">German</option>
+                                                <option value="34">Greek</option>
+                                                <option value="15">Hebrew</option>
+                                                <option value="16">Hindi</option>
+                                                <option value="17">Hungarian</option>
+                                                <option value="35">Irish</option>
+                                                <option value="3">Italian</option>
+                                                <option value="5">Japanese</option>
+                                                <option value="31">Korean</option>
+                                                <option value="18">Mandarin</option>
+                                                <option value="19">Norwegian</option>
+                                                <option value="20">Polish</option>
+                                                <option value="21">Portuguese</option>
+                                                <option value="22">Russian</option>
+                                                <option value="2">Spanish</option>
+                                                <option value="24">Swedish</option>
+                                                <option value="25">Tagalog</option>
+                                                <option value="27">Turkish</option>
+                                                <option value="28">UK English</option>
+                                                <option value="29">Vietnamese</option>
+                                            </select></div>
+                                    </div>
+                                </div>
+                                <div class='action'>
+                                    <button name="button" type="submit"
+                                        class="secondary-button action-button nomargin search-submit-small js-submit-agent custom-hide-mobile"
+                                        aria-label="Search Specialist"><i aria-hidden='true'
+                                            class='icon-line-search'></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div> -->
+            <div class='clearfix'></div>
+            <section class='section content nomargin nopadding clearfix' id='properties'>
+                <div class='container clearfix'>
+                    <div ca-observable-container='' id='search-properties-result' style='padding: 56px 0px 31px 0px;'>
+                        <!-- <div class='row no-search-results'>
+                            <div class='col-md-10 col-md-offset-1 col-xs-12 center'>
+                                <i class='icon-line2-info'></i> No advisors found in &quot;Port Harcourt, NG&quot;. Here
+                                are some tips to improve your search.
+                            </div>
+                        </div> -->
+                        <!-- <hr style='margin: 32px 0px;'>
+                        <div class='row clearfix'>
+                            <div class='col-md-8 col-md-offset-2 col-xs-12 search-hints'>
+                                <h3>Search Tips</h3>
+                                <ul>
+                                    <li>Check your spelling.</li>
+                                    <li>Broaden your search by using fewer or more general words.</li>
+                                    <li>Try searching by a similar name or a different combination of letters.</li>
+                                    <li>Remember you can search by location in order to find the right agent for you.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr style='margin: 56px 0px;'> -->
+                        <div class='row clearfix'>
+                            <div class='col-md-8 tleft'>
+                                <p class='med total-find-text center-mobile total-find-newest-text'>
+                                    <span>9</span> Advisors in Larkspur homes LLC
+
+                                </p>
+                            </div>
+                            <div class='col-md-4 tright'>
+                            </div>
+                        </div>
+                        <div class='clearfix' id='search-results'>
+                            <div class='row clearfix'>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/oskar-beirer-gfh"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Oskar Beirer Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1657783835/h5joctgvyrt0efzcd3sn.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Oskar Beirer profile page."
+                                                    >
+                                                    <h2 class='advisor-name'>Oskar Beirer</h2>
+                                                </a>
+                                                <div class='job-title'>Lizenzpartner, Private Office Advisor</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC Baden bei Wien</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Pfarrgasse 8, 2500 Baden, Niederösterreich, Österreich
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/oskar-beirer-gfh/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+4367688167702">Phone:
+                                                                +43 676 8816 7702
+                                                            </a>
+                                                        </div>
+                                                        <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/oskar-beirer-gfh/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+4367688167701">Cell:
+                                                                +43 676 8816 7701
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/oskar-beirer-gfh">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/christina-deutsch-mallorca"><img class="img-circle"
+                                                    width="250" height="250"
+                                                    alt="Christina Deutsch Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1656433986/lrak0lzvqmbkxrzg8lwg.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Christina Deutsch profile page."
+                                                    href="/advisor/christina-deutsch-mallorca">
+                                                    <h2 class='advisor-name'>Christina Deutsch</h2>
+                                                </a>
+                                                <div class='job-title'>Private Office Advisor</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Carrer Marquès de la Fontsanta, Santa Maria del Camí, Illes
+                                                        Balears 07320, ES
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/christina-deutsch-mallorca/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+34971621629">Phone:
+                                                                +34 971 62 16 29
+                                                            </a>
+                                                        </div> -->
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/christina-deutsch-mallorca/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+34610012690">Cell:
+                                                                +34 610 01 26 90
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/christina-deutsch-mallorca">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/mar-ossenkoppele"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Mar Ossenkoppele Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1645180938/on3swiifbsqnl0z5gaoo.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Mar Ossenkoppele profile page."
+                                                    href="/advisor/mar-ossenkoppele">
+                                                    <h2 class='advisor-name'>Mar Ossenkoppele</h2>
+                                                </a>
+                                                <div class='job-title'>Luxury Real Estate Advisor &amp; Private Office
+                                                    Consultant</div>
+                                            </div>
+                                            <div class='user-company'>Barcelona</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Barcelona, España
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <div itemprop='telephone'>
+                                                            <!-- <a data-remote-url="/leads/agent/mar-ossenkoppele/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+34691225660">Phone:
+                                                                +34 691 225660
+                                                            </a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/mar-ossenkoppele">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/stefan-jezycki"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Stefan Jezycki Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1646763581/gdk66uxeoonczrphvvwq.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Stefan Jezycki profile page."
+                                                    href="/advisor/stefan-jezycki">
+                                                    <h2 class='advisor-name'>Stefan Jezycki</h2>
+                                                </a>
+                                                <div class='job-title'>Private Office Advisor</div>
+                                                <div class='license'>License #01199662</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC Napa</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        USA, Napa, CA 94559, US
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/stefan-jezycki/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+17077382945">Phone:
+                                                                +1 707-738-2945
+                                                            </a>
+                                                        </div>
+                                                        <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/stefan-jezycki/call"
+                                                                class="cta-call phone-link" href="tel:7077382945">Cell:
+                                                                707 738 2945
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/stefan-jezycki">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/ken-dara"><img class="img-circle" width="250" height="250"
+                                                    alt="Ken Dara Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1646763501/o7kaqhkicfhq4aubs6jg.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Ken Dara profile page." href="/advisor/ken-dara">
+                                                    <h2 class='advisor-name'>Ken Dara</h2>
+                                                </a>
+                                                <div class='job-title'>Private Office Advisor</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC Sausalito</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        539 Bridgeway, Sausalito, CA 94965, US
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/ken-dara/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+14154253626">Phone:
+                                                                +1 415-425-3626
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important" href="/advisor/ken-dara">View
+                                                profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/jochen-enders"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Jochen W. Enders Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1649247311/uvlvp6trfekugij8ieag.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Jochen W. Enders profile page."
+                                                    href="/advisor/jochen-enders">
+                                                    <h2 class='advisor-name'>Jochen W. Enders</h2>
+                                                </a>
+                                                <div class='job-title'>Dipl.-Ing. Architecture / Private Office Advisor
+                                                    / Real Estate Agent</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC Immobilien Deutschland GmbH
+                                            </div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Oberkassel , Düsseldorf, Nordrhein-Westfalen 40545, DE
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/jochen-enders/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+492115571888">Phone:
+                                                                +49 211 5571-888
+                                                            </a>
+                                                        </div>
+                                                        <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/jochen-enders/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+491714757438">Cell:
+                                                                +49 171 4757438
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important" href="/advisor/jochen-enders">View
+                                                profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/undine-bornheim"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Undine Bornheim Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1643038654/b8zqcddchga7bzzft8cy.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Undine Bornheim profile page."
+                                                    href="/advisor/undine-bornheim">
+                                                    <h2 class='advisor-name'>Undine Bornheim</h2>
+                                                </a>
+                                                <div class='job-title'>Senior Real Estate Agent / Private Office Advisor
+                                                </div>
+                                            </div>
+                                            <div class='user-company'>Engel &amp; Voelkers Immobilien Deutschland GmbH
+                                            </div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Cologne , Köln, Nordrhein-Westfalen 50996, DE
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/undine-bornheim/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+49221299450">Phone:
+                                                                +49 221 2994-50
+                                                            </a>
+                                                        </div>
+                                                        <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/undine-bornheim/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+491714028953">Cell:
+                                                                +49 171 4028953
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/undine-bornheim">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/alex-watzdorf"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Alexander von Watzdorf Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1637073415/jrvrsyjsosnekx6bbfrw.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Alexander von Watzdorf profile page."
+                                                    href="/advisor/alex-watzdorf">
+                                                    <h2 class='advisor-name'>Alexander von Watzdorf</h2>
+                                                </a>
+                                                <div class='job-title'>Private Office Advisor</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC London</div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        London, UK
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <div itemprop='telephone'>
+                                                            <!-- <a data-remote-url="/leads/agent/alex-watzdorf/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+447950838330">Phone:
+                                                                +44 7950838330
+                                                            </a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important" href="/advisor/alex-watzdorf">View
+                                                profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                                <div class='col-md-4 col-sm-6 col-xs-12'>
+                                    <div aria-label='Real Estate Agent' class='advisor-card' role='group'
+                                        style='height: 615px;'>
+                                        <div class='photo'>
+                                            <a href="/advisor/carolynne-millington"><img class="img-circle" width="250"
+                                                    height="250"
+                                                    alt="Carolynne Millington Profile Picture, Go to agent&#39;s profile."
+                                                    src="{% static 'images/upload/c_fill,h_250,w_250/v1637060844/nnb1wfzrfsayr3wrvzn0.jpg' %}" />
+                                            </a>
+                                        </div>
+                                        <div class='advisor-info'>
+                                            <div class='heading row row-no-gutters'>
+                                                <a aria-label="Go to Carolynne Millington profile page."
+                                                    href="/">
+                                                    <h2 class='advisor-name'>Carolynne Millington</h2>
+                                                </a>
+                                                <div class='job-title'>Director Palma Surroundings / Private Office
+                                                    Advisor</div>
+                                            </div>
+                                            <div class='user-company'>Larkspur homes LLC Son Vida / Palma Surroundings
+                                            </div>
+                                            <div class='location'>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='location-text'>
+                                                        Son Vida, Palma de Mallorca, Balearic Islands 07013, ES
+                                                    </div>
+                                                </div>
+                                                <div class='row row-no-gutters'>
+                                                    <div class='phone'>
+                                                        <!-- <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/carolynne-millington/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+34971609141">Phone:
+                                                                +34 971 60 91 41
+                                                            </a>
+                                                        </div>
+                                                        <div itemprop='telephone'>
+                                                            <a data-remote-url="/leads/agent/carolynne-millington/call"
+                                                                class="cta-call phone-link"
+                                                                href="tel:+34629623910">Cell:
+                                                                +34 629 623 910
+                                                            </a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class='button-link row'>
+                                            <a class="button button-outline-gray button-block"
+                                                style="padding-left: 24px !important"
+                                                href="/advisor/carolynne-millington">View profile</a>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <!-- #content end -->
+        <!-- #footer -->
+
+        <footer class='ev-footer nomargin noborder' id='footer'>
+            <div id='copyrights'>
+                <div class='container copyright-links footer'>
+                    <div class='row hidden-sm hidden-md hidden-lg hidden-xl' style='margin-bottom: 20px;'>
+                        <div class='col-xs-12'>
+                            <ul class='mobile-links'>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> About Larkspur </a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Careers</a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Imprint</a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Press</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='row hidden-sm hidden-md hidden-lg hidden-xl'>
+                        <div class='col-xs-12 center-mobile'>
+                            <div id='footer-menu-trigger'>
+                                More
+                                <i class='ev-icon-arrow-down'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row clearfix footer-menu'>
+                        <div id='footer-menu'>
+                            <div class='col-md-2 col-sm-2 col-xs-12 center-mobile'>
+                                <p> Larkspur homes LLC</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="#">About Larkspur </a></li>
+                                    <li><a target="_blank" href="#">Locations</a></li>
+                                    <li><a target="_blank" href="#">Blog</a></li>
+                                    <li><a target="_blank" href="">Press</a></li>
+                                    <li><a target="_blank" href="#">Research</a></li>
+                                    <li><a aria-label="Privacy Policy" target="_blank" href="/privacy-policy">Privacy
+                                            policy</a></li>
+                                    <li><a aria-label="Cookie Policy" target="_blank" href="/cookie-policy">Cookie
+                                            policy</a></li>
+                                    <li><a target="_blank" href="/imprint">Imprint</a></li>
+                                    <li><a target="_blank" href="/disclaimer"><span class="translation_missing"
+                                                title="translation missing: en.disclaimer">Disclaimer</span></a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-12 col-md-offset-1 center-mobile'>
+                                <p>Business divisions</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Residential</a></li>
+                                    <li><a target="_blank" href="">Commercial</a></li>
+                                    <li><a target="_blank" href="">Yachting</a></li>
+                                    <!-- %li= link_to t('engel_volkers.footer.aviation'), 'https://www.engelvoelkers.com/en-lu/aviation/', target: '_blank' -->
+                                    <li><a target="_blank" href="">Polo</a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-2 hidden-xs center-mobile no-title'>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Private office</a></li>
+                                    <li><a target="_blank" href="">GG Magazine</a></li>
+                                    <li><a target="_blank" href="">Charity</a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-12 center-mobile'>
+                                <p>Seller</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Sell house</a></li>
+                                    <li><a target="_blank" href="">Let house</a></li>
+                                    <li><a target="_blank" href="">Sell flat</a></li>
+                                    <li><a target="_blank" href="">Let flat</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='col-md-2 col-sm-2 col-xs-12 col-md-offset-1 center-mobile contact-col'>
+                            <p>Contact us</p>
+                            <div class='title-line' style='border-bottom-color: #eb0a0a'></div>
+                            <ul class='contact-info center-mobile'>
+                                <li>
+                                    <i class='ev-icon-phone'></i>
+                                    <a target="_blank" class="telephone" href="tel:+13346351939">+1 (334) 635-1939</a>
+                                </li>
+                                <!-- <li>
+                                    <i class='ev-icon-fax'></i> +
+                                </li> -->
+                                <li class='address'> Larkspur homes LLC</li>
+                                <li class='address'>143 B. Orlando Street</li>
+                                <li class='address'>32802 Florida, USA</li>
+                            </ul>
+                            <!-- <div class='social-media'>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href=""><i class="ev-icon-facebook"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-linkedin"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-instagram"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-youtube"></i></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class='row-fluid'>
+                        <div class='container'>
+                            <div class='row-fluid'>
+                                <hr>
+                                <div class='fair-housing-ev'>
+                                    <div class='fair-housing-ev' id='rights-reserved'>
+                                        Information on this website is provided by real estate professionals or
+                                        developers and/or their representatives. Prices, details and availability may
+                                        change; please verify any information with a real estate professional or the
+                                        developer. Larkspur homes LLC
+                                        is not responsible for any errors or omissions. This is not an offer to sell.
+                                        Larkspur homes LLC fully supports the principles of the Fair Housing Act and
+                                        the Equal Opportunity Act.
+                                        <br /><br /> <a href="https://www.collabratechnology.com/enterprise"
+                                        target="_blank">Powered by: ©2022 Larkspur Homes LLC. | All Rights
+                                        Reserved</a>
+                                    </div>
+                                    <div class='fair-housing-ev-logo'>
+                                        <!-- <img src="//dlm2ugoua3jmc.cloudfront.net/assets/logo-fair-housing-550745bf3f94e79c08150d30c4a8ac5e.svg"
+                                                alt="Logo fair housing" /> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='footer-logo'>
+                <small><b> Larkspur homes LLC</b></small>
+                <!-- <img alt="Larkspur homes LLC logo"
+                        src="//dlm2ugoua3jmc.cloudfront.net/assets/favicons/ev/favicon-32x32-b19d8216fbb00a89aab1eaeda182a987.png" /> -->
+            </div>
+        </footer>
+
+        <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+    <!-- #gotoTop.icon-angle-up -->
+    <!-- - Flash modal messages -->
+    <div aria-textledby='myModalLabel' class='fade js-modal modal' id='globalPreferences' role='dialog' tabindex='-1'>
+        <div aria-label='Modal Dialog' class='modal-dialog'>
+            <div class='modal-body center'>
+                <div class='modal-content'>
+                    <div class='modal-header no-border'>
+                        <button aria-label='Close' class='close js-modal-close' data-dismiss='modal'
+                            type='button'>×</button>
+                        <h3 class='it modal-title global-title' id='myModalLabel'>Global Preferences</h3>
+                    </div>
+                    <div class='modal-body nomargin'>
+                        <form action="/language" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden"
+                                value="&#x2713;" />
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='change_language'
+                                        id='language-label'>Language</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><select name="change_language" id="change_language"
+                                        class="selectpicker styled-input" data-live-search="false" data-size="4"
+                                        data-width="100%">
+                                        <option data-icon="flag flag-usa" selected="selected" value="en">English
+                                        </option>
+                                        <option data-icon="flag flag-germany" value="de">Deutsch</option>
+                                        <option data-icon="flag flag-spain" value="es">Español</option>
+                                        <option data-icon="flag flag-france" value="fr">Français</option>
+                                        <option data-icon="flag flag-brazil" value="pt">Português</option>
+                                        <option data-icon="flag flag-china" value="zh-CN">中国（简体）</option>
+                                        <option data-icon="flag flag-japan" value="ja">日本語</option>
+                                    </select></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='currency' id='currency-label'>Currency</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><select name="currency" id="currency"
+                                        class="selectpicker left lg" data-live-search="true" data-size="3"
+                                        data-width="100%">
+                                        <option title="AFN (؋)" value="AFN">Afghan Afghani (AFN)</option>
+                                        <option title="ARS ($)" value="ARS">Argentine Peso (ARS)</option>
+                                        <option title="AUD ($)" value="AUD">Australian Dollar (AUD)</option>
+                                        <option title="BSD ($)" value="BSD">Bahamian Dollar (BSD)</option>
+                                        <option title="BBD ($)" value="BBD">Barbadian Dollar (BBD)</option>
+                                        <option title="BZD (BZ$)" value="BZD">Belize Dollar (BZD)</option>
+                                        <option title="BMD ($)" value="BMD">Bermudian Dollar (BMD)</option>
+                                        <option title="BAM ()" value="BAM">Bosnia Herzegovina Convertible Mark (BAM)
+                                        </option>
+                                        <option title="BWP (P)" value="BWP">Botswana Pula (BWP)</option>
+                                        <option title="BRL (R$)" value="BRL">Brazilian Real (BRL)</option>
+                                        <option title="BGN ()" value="BGN">Bulgarian Lev (BGN)</option>
+                                        <option title="CAD ($)" value="CAD">Canadian Dollar (CAD)</option>
+                                        <option title="KYD ($)" value="KYD">Cayman Islands Dollar (KYD)</option>
+                                        <option title="XPF (Z$)" value="XPF">Cfp Franc (XPF)</option>
+                                        <option title="CLP ($)" value="CLP">Chilean Peso (CLP)</option>
+                                        <option title="CNY (¥)" value="CNY">Chinese Yuan (CNY)</option>
+                                        <option title="COP ($)" value="COP">Colombian Peso (COP)</option>
+                                        <option title="CRC (₡)" value="CRC">Costa Rican Colón (CRC)</option>
+                                        <option title="HRK ()" value="HRK">Croatian Kuna (HRK)</option>
+                                        <option title="CZK (K)" value="CZK">Czech Koruna (CZK)</option>
+                                        <option title="DKK (kr)" value="DKK">Danish Krone (DKK)</option>
+                                        <option title="DOP (RD$)" value="DOP">Dominican Peso (DOP)</option>
+                                        <option title="XCD ($)" value="XCD">East Caribbean Dollar (XCD)</option>
+                                        <option title="EGP ()" value="EGP">Egyptian Pound (EGP)</option>
+                                        <option title="EUR (€)" value="EUR">Euro (EUR)</option>
+                                        <option title="FJD ()" value="FJD">Fijian Dollar (FJD)</option>
+                                        <option title="GBP (£)" value="GBP">Great British Pound (GBP)</option>
+                                        <option title="HKD (HK$)" value="HKD">Hong Kong Dollar (HKD)</option>
+                                        <option title="HUF (Ft)" value="HUF">Hungarian Forint (HUF)</option>
+                                        <option title="ISK (kr)" value="ISK">Icelandic Króna (ISK)</option>
+                                        <option title="INR (₹)" value="INR">Indian Rupee (INR)</option>
+                                        <option title="IDR (Rp)" value="IDR">Indonesian Rupiah (IDR)</option>
+                                        <option title="IQD ()" value="IQD">Iraqi Dinar (IQD)</option>
+                                        <option title="ILS (₪)" value="ILS">Israeli New Shekel (ILS)</option>
+                                        <option title="JMD ()" value="JMD">Jamaican Dollar (JMD)</option>
+                                        <option title="JPY ()" value="JPY">Japanese Yen (JPY)</option>
+                                        <option title="JOD ()" value="JOD">Jordanian Dinar (JOD)</option>
+                                        <option title="KES (KSh)" value="KES">Kenyan Shilling (KES)</option>
+                                        <option title="KWD ()" value="KWD">Kuwaiti Dinar (KWD)</option>
+                                        <option title="MKD (ден)" value="MKD">Macedonian Denar (MKD)</option>
+                                        <option title="MYR (RM)" value="MYR">Malaysian Ringgit (MYR)</option>
+                                        <option title="MXN (MXN)" value="MXN">Mexican Peso (MXN)</option>
+                                        <option title="MAD ()" value="MAD">Moroccan Dirham (MAD)</option>
+                                        <option title="TWD ()" value="TWD">New Taiwan Dollar (TWD)</option>
+                                        <option title="NZD ($)" value="NZD">New Zealand Dollar (NZD)</option>
+                                        <option title="NOK (kr)" value="NOK">Norwegian Krone (NOK)</option>
+                                        <option title="PKR ()" value="PKR">Pakistani Rupee (PKR)</option>
+                                        <option title="PAB (B/.)" value="PAB">Panamanian Balboa (PAB)</option>
+                                        <option title="PEN (S/.)" value="PEN">Peruvian Nuevo Sol (PEN)</option>
+                                        <option title="PHP (₱)" value="PHP">Philippine Peso (PHP)</option>
+                                        <option title="PLN (z)" value="PLN">Polish Złoty (PLN)</option>
+                                        <option title="RON ()" value="RON">Romanian Leu (RON)</option>
+                                        <option title="RUB (руб)" value="RUB">Russian Ruble (RUB)</option>
+                                        <option title="RWF ()" value="RWF">Rwandan Franc (RWF)</option>
+                                        <option title="SAR ()" value="SAR">Saudi Riyal (SAR)</option>
+                                        <option title="SGD ($)" value="SGD">Singapore Dollar (SGD)</option>
+                                        <option title="ZAR (R)" value="ZAR">South African Rand (ZAR)</option>
+                                        <option title="KRW ()" value="KRW">South Korean Won (KRW)</option>
+                                        <option title="SEK (kr)" value="SEK">Swedish Krona (SEK)</option>
+                                        <option title="CHF (CHF)" value="CHF">Swiss Franc (CHF)</option>
+                                        <option title="THB (฿)" value="THB">Thai Baht (THB)</option>
+                                        <option title="TRY (t)" value="TRY">Turkish Lira (TRY)</option>
+                                        <option title="TYR (₺)" value="TYR">Turkish Lira (TYR)</option>
+                                        <option title="UGX (Ush)" value="UGX">Ugandan Shilling (UGX)</option>
+                                        <option title="AED (د.إ)" value="AED">United Arab Emirates Dirham (AED)</option>
+                                        <option title="USD ($)" selected="selected" value="USD">United States Dollar
+                                            (USD)</option>
+                                        <option title="UYU ($U)" value="UYU">Uruguayan Peso (UYU)</option>
+                                        <option title="UZS (лв)" value="UZS">Uzbekistani Som (UZS)</option>
+                                        <option title="VUV (VT)" value="VUV">Vanuatu Vatu (VUV)</option>
+                                        <option title="VEF (Bs.)" value="VEF">Venezuelan Bolívar (VEF)</option>
+                                        <option title="VND (₫)" value="VND">Vietnamese Dong (VND)</option>
+                                        <option title="ZWD (Z$)" value="ZWD">Zimbabwean Dollar (ZWD)</option>
+                                        <option title="ZWL (Z$)" value="ZWL">Zimbabwean Dollar (ZWL)</option>
+                                    </select></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='unit' id='unit-label'>Units</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><input type="checkbox" name="unit" id="unit" value="m2"
+                                        data-on-text="Sq M." data-off-text="Acres" data-on-color="light uppercase"
+                                        data-off-color="light uppercase" data-handle-width="47" class="bt-switch" />
+                                </div>
+                            </div>
+                            <div class='row topmargin-sm bottommargin-sm'>
+                                <div class='col-md-7 col-md-offset-4 col-xs-7 col-xs-offset-4 center'>
+                                    <button name="button" type="submit"
+                                        class="secondary-button btn-block center nomargin"><em aria-hidden='true'
+                                            class='icon-line-check'></em>
+                                        <span>Save</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden='true' aria-textledby='myModalLabel' class='modal fade' id='contactColdwellModal' role='dialog'
+        tabindex='-1'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header' style='padding: 30px; background-color: #f8f5fd;'>
+                    <button class='close' data-dismiss='modal' type='button'>×</button>
+                    <h3 class='title-coldwell-login'>
+                        Contact Us
+                    </h3>
+                </div>
+                <div class='modal-body'>
+                    <div class='main-form' style='padding: 30px;'>
+                        <form class="simple_form form-vertical form-styled js-coldwell-contact-us"
+                            id="js-coldwell-contact-us" action="/contact_us.json" accept-charset="UTF-8"
+                            data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input
+                                type="hidden" name="authenticity_token"
+                                value="wrcB7qhqrSJh3NEQIazAM1v/OUSRh9KdDm4gzalda0Hx0g8hPQIBlJRvThagji9EIa5pImjB10t2DklWYa1QXw==" /><input
+                                type="hidden" name="coldwell_contact" id="coldwell_contact" />
+                            <div class="control-group string required contact_us_email">
+                                <div class="controls"><input class="string required styled-input min"
+                                        autocomplete="disabled" inputmode="email" required="required"
+                                        aria-required="true" placeholder="Email" type="text" name="contact_us[email]"
+                                        id="contact_us_email" /></div>
+                            </div>
+                            <div class="control-group string required contact_us_name">
+                                <div class="controls"><input class="string required styled-input min"
+                                        required="required" aria-required="true" placeholder="Full Name" type="text"
+                                        name="contact_us[name]" id="contact_us_name" /></div>
+                            </div>
+                            <div class='row-fluid'>
+                                <div class="control-group text optional contact_us_message">
+                                    <div class="controls"><textarea rows="8" class="text optional styled-input min"
+                                            placeholder="Message" name="contact_us[message]" id="contact_us_message">
+</textarea></div>
+                                </div>
+                            </div>
+                            <div class='recaptcha-container'>
+                                <div class='error'></div>
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                <div class="g-recaptcha" data-sitekey="6Lflws8UAAAAAFz9nHdRA8art71xVSLZnMhQldj3"></div>
+                                <noscript>
+                                    <div style="width: 302px; height: 352px;">
+                                        <div style="width: 302px; height: 352px; position: relative;">
+                                            <div style="width: 302px; height: 352px; position: absolute;">
+                                                <iframe
+                                                    src="https://www.google.com/recaptcha/api/fallback?k=6Lflws8UAAAAAFz9nHdRA8art71xVSLZnMhQldj3"
+                                                    frameborder="0" scrolling="no"
+                                                    style="width: 302px; height:352px; border-style: none;">
+                                                </iframe>
+                                            </div>
+                                            <div style="width: 250px; height: 80px; position: absolute; border-style: none;
+                  bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+                                                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                    class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
+                    margin: 0px; padding: 0px; resize: none;" value="">
+</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </noscript>
+
+                            </div>
+                            <br>
+                            <div class='row-fluid'>
+                                <input type="submit" name="commit" value="Send"
+                                    class="secondary-button btn-block nomargin" style="width: 53%;" />
+                            </div>
+                            <div class='row-fluid alert-message hide'></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #External JavaScripts -->
+    <script src="{% static 'javascripts/main.js' %}" type="text/javascript"></script>
+
+    <script src="//dlm2ugoua3jmc.cloudfront.net/assets/engel_volkers-aedefd0e0e4404c4b22007996626479f.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    
+</body>
+
+</html>

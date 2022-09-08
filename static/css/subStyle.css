@@ -68,12 +68,11 @@ li.active>a {
 .mgm {
     border-radius: 7px;
     position: fixed;
-    top: 1rem;
-    z-index: 200;
+   bottom: 1rem;
+    z-index: 2000;
     height: fit-content;
     width: fit-content;
-    right: 0;
-    left: 0;
+    right: 1rem;
     margin: auto;
     background: #fff;
     padding: 10px 27px;
@@ -94,7 +93,7 @@ li.active>a {
 
 
 .brand-row {
-    background-color: #f0f0f0;
+    background-color: rgb(39, 37, 37);
     height: fit-content;
     padding: 5rem 0;
     font-size: 5rem;

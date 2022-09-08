@@ -5,19 +5,19 @@ var listPlans = ['$500', '$1500', '$1000', '$10,000', '$2000', '$3000', '$4000',
 interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
 var run = setInterval(request, interval);
 
-function request() {
-    clearInterval(run);
-    interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-    var country = listCountries[Math.floor(Math.random() * listCountries.length)];
-    var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-    var msg = 'Someone from <b>' + country + '</b> just bought a land for <strong href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' </strong>';
-    $(".mgm .txt").html(msg);
-    $(".mgm").stop(true).fadeIn(.5);
-    window.setTimeout(function() {
-        $(".mgm").stop(true).fadeOut(100);
-    }, 8000);
-    run = setInterval(request, interval);
-};
+// function request() {
+//     clearInterval(run);
+//     interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+//     var country = listCountries[Math.floor(Math.random() * listCountries.length)];
+//     var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+//     var msg = 'Someone from <b>' + country + '</b> just bought a land <strong href="javascript:void(0);" onclick="javascript:void(0);">' + ' </strong>';
+//     $(".mgm .txt").html(msg);
+//     $(".mgm").stop(true).fadeIn(.5);
+//     window.setTimeout(function() {
+//         $(".mgm").stop(true).fadeOut(100);
+//     }, 8000);
+//     run = setInterval(request, interval);
+// };
 
 
 
@@ -52,6 +52,5 @@ function testScroll() {
     });
   }
 }
-
 
 
