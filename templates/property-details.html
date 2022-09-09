@@ -1,0 +1,1067 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en' prefix='og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'>
+
+<head itemscope itemtype='http://schema.org/WebSite'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link rel="stylesheet" media="all" href="{% static 'css/style.css' %}" data-turbolinks-track="true" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token"
+        content="dn9jc31SXP+cqG/EcJtW246RobiFv8BS9VZs7o95KoVFGm286DrwSWkb8MLxubms9MDx3nz5xYSNNgV1R4kRmw==" />
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+   
+    <meta content='View luxury real estate property details for Condécourt, France (MLS#: ) at Engel &amp; Völkers.'
+        name='description'>
+    <meta content='Condécourt, France, luxury real estate homes for sale, luxury real estate properties, real estate'
+        name='keywords'>
+    <meta
+        content=''
+        property='og:image'>
+    <meta content='700' property='og:image:height'>
+    <meta content='1400' property='og:image:width'>
+
+    <title itemprop='name'> Larkspur homes LLC</title>
+
+    <link rel="shortcut icon" href="{% static 'images/upload/larkspur.jpeg' %}" type="image/x-icon">
+    <script async='' src='https://cdn.iubenda.com/cons/iubenda_cons.js' type='text/javascript'></script>
+    <script src='//cdn.iubenda.com/cs/ccpa/stub.js' type='text/javascript'></script>
+    <script async='' charset='UTF-8' src='//cdn.iubenda.com/cs/iubenda_cs.js' type='text/javascript'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script async src="//jsfiddle.net/aj7Lk2bw/19/"></script>
+
+</head>
+
+<body class='stretched no-transition' data-lang='en'>
+ 
+        <!-- #header -->
+        <!-- #primary-menu -->
+        <header class='header-top-message white' data-sticky-class='white' data-sticky-offset='0' id='header'>
+
+            <div class="mgm" style="display: none;">
+                <div class="txt" style="color:black;">Someone from <b></b> just bought <a href="javascript:void(0);"
+                        onclick="javascript:void(0);"></a></div>
+            </div>
+    
+            <div id='header-wrap' style='border-bottom-color: #eb0a0a;'>
+    
+    
+                <div class='container clearfix primary-menu'>
+                    <div id='logo'>
+                        <a class="standard-logo" href="{% url 'core:home' %}">
+                            Larkspur homes LLC
+    
+                        </a>
+    
+                    </div>
+                    <nav class='menu-ev' id='primary-menu'>
+                        <!-- #main-menu -->
+                        <ul class='en' id='main-menu'>
+                            <li></li>
+                            <li class=''>
+                                <a href="{% url 'core:properties' %}">Property Listings</a>
+                            </li>
+                            <li class=''>
+                                <a href="{% url 'core:private_listings' %}">Private listings</a>
+                            </li>
+                            <li class=''>
+                                <a href="{% url 'core:advisors' %}">Advisors</a>
+                            </li>
+                            <li class='menu-last'>
+                                <a href="{% url 'core:services' %}">Services</a>
+                            </li>
+                        </ul>
+                        <!-- #top-menu -->
+                        <ul class='en' id='top-menu' style='float:right;'>
+                            <li><a target="_blank" href="{% url 'core:blog' %}">Blog</a></li>
+                            <li class='menu-icon space'>
+                                <a data-target="#globalPreferences" data-toggle="modal"
+                                    aria-label="Open global preferences modal" href="#globalPreferences">
+                                    <div class='ev-icon-globe'></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id='primary-menu-trigger'>
+                        <i class='ev-icon-hamburger-menu'></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- #primary-menu end -->
+        <style>
+            :root {
+                --Hcolor: #eb0a0a;
+            }
+
+            li>a {
+                color: var(--Hcolor);
+            }
+
+            li>a:hover {
+                color: var(--Hcolor) !important;
+            }
+
+            li.active>a {
+                color: var(--Hcolor) !important;
+            }
+
+            #header #primary-menu>ul>li>a:hover {
+                color: var(--Hcolor) !important;
+            }
+
+            #primary-menu ul ul:not(.mega-menu-column) {
+                border-top-color: var(--Hcolor) !important;
+            }
+
+            #header #top-menu li:not(.menu-icon) a:hover {
+                color: var(--Hcolor) !important;
+            }
+        </style>
+
+        <!-- #header end -->
+        <section class='slider-parallax-static full-screen swiper_wrapper above-fold clearfix ovisible'
+            data-autoplay='5000' data-centered-slides='false' data-loop='true' data-looped-slides='7' data-speed='500'
+            id='slider' tabindex='0'>
+            <div class='slider-parallax-inner'>
+                <div class='no-swiping-touch'></div>
+                <div class='swiper-container swiper-parent'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide radial-shadow dark'
+                            style="background-image: url('{{ property.photo_main.url }}');">
+                            <div class='radial-corner-shadow hidden-xs'>
+                                <div class='row icons-descriptors clearfix hidden-xs'>
+
+                                    <div class='description col-md-7 col-sm-7 col-xs-7 description-tr'>{{property.title}}</div>
+                                    <!-- <div class='headline col-md-7 col-sm-7 col-xs-7'>Château exceptionnel du XVIII
+                                        siècle style Mansart</div> -->
+                                    <div class='first-fold-location col-md-6 col-sm-6 col-xs-6'>{{property.state}}, {{property.country}}</div>
+                                    <div class='col-md-6 col-sm-6 col-xs-6 price regular'
+                                        style='border-bottom-color: #eb0a0a;'>$ {{property.price}}</div>
+                                    <div class='icon col-md-12 col-sm-12 col-xs-12 icon-hd'>
+                                        <div class='col-md-1 center icon-container'>
+                                            <i aria-hidden='true' class='ev-icon ev-icon-beds'></i>
+                                            <p class='uppercase head'>Beds</p>
+                                            <p class='icon-text uppercase'>{{property.number_of_bedroom}}</p>
+                                        </div>
+                                        <div class='col-md-1 center icon-container'>
+                                            <i aria-hidden='true' class='ev-icon ev-icon-bathrooms'></i>
+                                            <p class='uppercase head'>Bathrooms</p>
+                                            <p class='icon-text uppercase'>{{property.number_of_bedroom}}</p>
+                                        </div>
+                                        <div class='col-md-1 center icon-container'>
+                                            <i aria-hidden='true' class='ev-icon ev-icon-living-area'></i>
+                                            <p class='uppercase head'><span class="translation_missing"
+                                                    title="translation missing: en.unit_information.living-area">Living
+                                                    Area</span></p>
+                                            <p class='icon-text uppercase'>{{property.living_area}} Sq Ft.</p>
+                                        </div>
+                                        <div class='col-md-1 center icon-container'>
+                                            <i aria-hidden='true' class='ev-icon ev-icon-lotsize'></i>
+                                            <p class='uppercase head'>Lotsize</p>
+                                            <p class='icon-text uppercase'>{{property.lot_size}} Acres</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-slide radial-shadow dark'
+                            style="background-image: url('{{ property.photo_main.url }}');">
+                        </div>
+                        <div class='swiper-slide radial-shadow dark'
+                            style="background-image: url('{{ property.photo_1.url }}');">
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class='round' id='slider-arrow-left'>
+                        <i class='ev-icon-arrow-left'></i>
+                    </div>
+                    <div class='round' id='slider-arrow-right'>
+                        <i class='ev-icon-arrow-right'></i>
+                    </div>
+                    <div aria-label='Play/pause slider' class='property-slider-button ev-play-pause'
+                        id='slider-play-pause'>
+                        <i aria-hidden='true' class='ev-icon-pause'></i>
+                    </div>
+                    <div id='slide-number'>
+                        <div data-help-text='Photos' id='slide-number-total'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class='clearfix'></div>
+        <!-- #content -->
+        <section id='content'>
+            <div class='hide success' data-notify-close='true'
+                data-notify-msg="&lt;i class='icon-info-sign'&gt;&lt;/i&gt; Property updated successfully "
+                data-notify-position='bottom-right' data-notify-timeout='5000' data-notify-type='success'
+                id='flash-message-success'></div>
+            <div class='container clearfix'>
+                <div class='row icons-descriptors-mobile clearfix visible-xs'>
+
+                    <div class='description col-offset'>{{property.title}}</div>
+                    <!-- <div class='first-fold-location col-offset'>Condécourt, France</div> -->
+                    <div class='col-offset price regular'>$ {{property.price}}</div>
+                    <div class='icon col-xs-12 icon-hd text-center'>
+                        <div class='col-xs-6 center icon-container'>
+                            <i aria-hidden='true' class='ev-icon ev-icon-beds'></i>
+                            <p class='uppercase head'>Beds</p>
+                            <p class='icon-text uppercase'>{{property.number_of_bedroom}}</p>
+                        </div>
+                        <div class='col-xs-6 center icon-container'>
+                            <i aria-hidden='true' class='ev-icon ev-icon-bathrooms'></i>
+                            <p class='uppercase head'>Bathrooms</p>
+                            <p class='icon-text uppercase'>{{property.number_of_bathroom}}</p>
+                        </div>
+                        <div class='col-xs-6 center icon-container'>
+                            <i aria-hidden='true' class='ev-icon ev-icon-living-area'></i>
+                            <p class='uppercase head'><span class="translation_missing"
+                                    title="translation missing: en.unit_information.living-area">Living Area</span></p>
+                            <p class='icon-text uppercase'>{{property.living_area}}</p>
+                        </div>
+                        <div class='col-xs-6 center icon-container'>
+                            <i aria-hidden='true' class='ev-icon ev-icon-lotsize'></i>
+                            <p class='uppercase head'>Lotsize</p>
+                            <p class='icon-text uppercase'>{{property.living_area}} Acres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ca-context='#ca-dev' ca-onload='trackViewProperty' class='clearfix'
+                data-mixpanel='{"eventName":"Page loaded","trigger":"load","eventData":{"object_name":"Condécourt, France Luxury Real Estate Property - Engel \u0026 Völkers","object_type":"Private page","actor_id":null,"actor_email":null,"actor_group":null,"pxutm_campaing_id":null,"px_group_name":"Engel \u0026 Völkers","px_property_ID":460312},"multiple":null,"ajaxData":null}'
+                id='property-page'>
+                <section class='section white content nomargin clearfix' style='padding-top: 56px;'>
+                    <div class='container clearfix'>
+                        <hr class='div col-md-12 col-sm-12 col-xs-12 separator'>
+                        <div class='row clearfix'>
+                            <div class='col-md-8'>
+                                <div class='property tabs tabs-bb clearfix' id='content-tabs'>
+                                    <ul class='tab-nav clearfix'>
+                                        <li class='ui-state-default ui-state-active'>
+                                            <a href='#property-description'
+                                                id='property-description-tab'>Description</a>
+                                        </li>
+                                        <li class=''>
+                                            <a href='#property-image_media'
+                                                id='property-image_media-tab'>Media/Images</a>
+                                        </li>
+                                    </ul>
+                                    <div class='tab-container tabs-border'>
+                                        <div class='clearfix tab-content ui-state-active ui-state-default'
+                                            id='property-description'>
+                                            <div class='row text-block clearfix'>
+                                                <div class='col-md-4 col-sm-4'>
+                                                    <h2 class='sm title'>Summary</h2>
+                                                </div>
+                                                <div class='col-md-8 col-sm-8 content'>
+                                                    {{property.description}}
+                                                </div>
+                                            </div>
+                                            <hr class='div'>
+                                            <div class='row text-block clearfix'>
+                                            </div>
+                                            <hr class='div'>
+                                            <div class='row text-block clearfix'>
+                                            </div>
+                                            <div class='hide' id='loading'>
+                                                <div class='row'><img class="center-block"
+                                                        src="//dlm2ugoua3jmc.cloudfront.net/assets/icons/ajax-loader-6890bb1bc08536f3a82d35e8e65a5384.gif"
+                                                        alt="Ajax loader" /></div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class='clearfix tab-content' id='property-image_media'>
+                                            <input type="hidden" name="total_count" id="js-total-images-count" value="8"
+                                                data-color="#eb0a0a" />
+                                            <div class='hide'></div>
+                                            <div class='clearfix' data-lightbox='gallery' id='images-results'>
+                                                <input type="hidden" name="total_count" id="js-total-images-count"
+                                                    value="8" />
+                                                <ul class='no-style'>
+                                                    <li
+                                                        class='col-md-4 col-sm-4 col-xs-6 col-xss-12 gallery-item norightmargin center'>
+                                                        <span class='helper'></span>
+                                                        <a class="prevent-download" data-lightbox="gallery-item"
+                                                            data-title="null"
+                                                            href="{{ property.photo_main.url }}"><img
+                                                                alt="Condécourt, France - Image 1"
+                                                                src="{{ property.photo_main.url }}" />
+                                                            <div class='overlay'>
+                                                                <div ca-context='#ca-dev'
+                                                                    ca-onclick='trackViewPropertyMedia'
+                                                                    ca-prop-media-language='en'
+                                                                    ca-prop-media-type='Photo'
+                                                                    ca-prop-media-url='https://res.cloudinary.com/pxd-production/image/upload/v1662559514/i9wohonsba3bch3vpbim.jpg'
+                                                                    class='overlay-wrap transparent'>
+                                                                    <i aria-hidden='true'
+                                                                        class='icon-2x icon-line-search'></i>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li
+                                                        class='col-md-4 col-sm-4 col-xs-6 col-xss-12 gallery-item norightmargin center'>
+                                                        <span class='helper'></span>
+                                                        <a class="prevent-download" data-lightbox="gallery-item"
+                                                            data-title="null"
+                                                            href="{{ property.photo_1.url }}"><img
+                                                                alt="Condécourt, France - Image 2"
+                                                                src="{{ property.photo_1.url }}" />
+                                                            <div class='overlay'>
+                                                                <div ca-context='#ca-dev'
+                                                                    ca-onclick='trackViewPropertyMedia'
+                                                                    ca-prop-media-language='en'
+                                                                    ca-prop-media-type='Photo'
+                                                                    ca-prop-media-url='https://res.cloudinary.com/pxd-production/image/upload/v1662559648/srwdooxspin2hf13vpnc.jpg'
+                                                                    class='overlay-wrap transparent'>
+                                                                    <i aria-hidden='true'
+                                                                        class='icon-2x icon-line-search'></i>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+
+
+                                            </div>
+                                            <div class='center' id='paginate-images'>
+
+                                            </div>
+
+                                            <hr class='div'>
+                                            <div class='row-fluid videos'>
+                                                <div class='row-fluid hide'>
+
+                                                </div>
+                                                <div id='videos-results'>
+                                                    <div class='owl-carousel video-carousel carousel-widget'
+                                                        data-items-lg='1' data-items-md='1' data-items='1'
+                                                        data-margin='0' data-nav='true' data-pagi='true' id='oc-videos'>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class='clearfix tab-content' id='property-marketing'>
+                                            <div class='hide' id='send-pdf-modal-content'>
+                                                <form
+                                                    class="simple_form form-vertical form-inline form-styled topmargin-sm bottommargin-sm js-ca-share-property"
+                                                    id="send-marketing-pdf"
+                                                    action="/developments/chateau-du-xviii-siecle-style-mansart/send_marketing_pdf.json"
+                                                    accept-charset="UTF-8" data-remote="true" method="post"><input
+                                                        name="utf8" type="hidden" value="&#x2713;" />
+                                                    <div class='notification-success hide' data-notify-close='true'
+                                                        data-notify-msg="&lt;i class='icon-ok-sign'&gt;&lt;/i&gt; Email sent."
+                                                        data-notify-position='bottom-right' data-notify-timeout='10000'
+                                                        data-notify-type='success'></div>
+                                                    <div class='notification-error hide' data-notify-close='true'
+                                                        data-notify-msg="&lt;i class='icon-remove-sign'&gt;&lt;/i&gt;An error has occurred"
+                                                        data-notify-position='bottom-right' data-notify-timeout='10000'
+                                                        data-notify-type='error'></div>
+                                                    <input type="hidden" name="subscription" id="subscription" />
+                                                    <input type="hidden" name="page_type" id="page_type"
+                                                        value="Property Details" />
+                                                    <div class="control-group hidden send_marketing_id">
+                                                        <div class="controls"><input id="marketing_id" class="hidden"
+                                                                required="required" aria-required="true" type="hidden"
+                                                                name="send_marketing[id]" /></div>
+                                                    </div>
+                                                    <div class="control-group hidden send_marketing_type">
+                                                        <div class="controls"><input id="marketing_type" class="hidden"
+                                                                required="required" aria-required="true" type="hidden"
+                                                                name="send_marketing[type]" /></div>
+                                                    </div>
+                                                    <div class="control-group hidden send_marketing_file_name">
+                                                        <div class="controls"><input id="marketing_file_name"
+                                                                class="hidden" required="required" aria-required="true"
+                                                                type="hidden" name="send_marketing[file_name]" /></div>
+                                                    </div>
+                                                    <div class="control-group hidden send_marketing_development_id">
+                                                        <div class="controls"><input value="460312" class="hidden"
+                                                                required="required" aria-required="true" type="hidden"
+                                                                name="send_marketing[development_id]"
+                                                                id="send_marketing_development_id" /></div>
+                                                    </div>
+                                                    <div class='row send-brochure-form'>
+                                                        <div class='email-list col-md-6'>
+                                                            <div
+                                                                class="control-group select required send_marketing_to">
+                                                                <label class="select required control-label"
+                                                                    for="send_marketing_to"><abbr
+                                                                        title="required">*</abbr> Emails</label>
+                                                                <div class="controls"><input name="send_marketing[to][]"
+                                                                        type="hidden" value="" /><select
+                                                                        class="select required message-to email-tags"
+                                                                        multiple="multiple"
+                                                                        data-placeholder="Please add emails separated by commas."
+                                                                        data-dropdown-css="{&quot;display&quot;:&quot;none&quot;}"
+                                                                        required="required" aria-required="true"
+                                                                        name="send_marketing[to][]"
+                                                                        id="send_marketing_to"></select></div>
+                                                            </div>
+                                                            <div class='row'>
+                                                                <div class='col-md-5 pull-right contact-liks hide'>
+                                                                    <a class="get-contacts-list hide" data-remote="true"
+                                                                        href="/user_contacts/contacts_list.json"></a>
+                                                                    <a class='remove-all-contacts pull-right hide'
+                                                                        data-selector='.message-to'>
+                                                                        Remove all
+                                                                    </a>
+                                                                    <a class='sent-to-all pull-right'
+                                                                        data-selector='.message-to'>
+                                                                        Send to all my contacts
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class='col-md-6'>
+                                                            <div
+                                                                class="control-group string required send_marketing_subject">
+                                                                <label class="string required control-label"
+                                                                    for="send_marketing_subject"><abbr
+                                                                        title="required">*</abbr> Subject</label>
+                                                                <div class="controls"><input
+                                                                        class="string required styled-input min"
+                                                                        required="required" aria-required="true"
+                                                                        placeholder="Subject" type="text"
+                                                                        name="send_marketing[subject]"
+                                                                        id="send_marketing_subject" /></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class='col-md-12'>
+                                                            <div
+                                                                class="control-group text optional send_marketing_message">
+                                                                <label class="text optional control-label"
+                                                                    for="send_marketing_message">Message</label>
+                                                                <div class="controls"><textarea
+                                                                        class="text optional styled-input min"
+                                                                        placeholder="Message"
+                                                                        name="send_marketing[message]"
+                                                                        id="send_marketing_message">
+I saw this and thought you might be interested.</textarea></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class='attachment attachments-block sm'>
+                                                            <i aria-hidden='true' class='icon-file icon-2x'></i>
+                                                            <span class='atach-file'></span>
+                                                        </div>
+                                                        <div class='row brochure-send-button'>
+                                                            <div class='col-md-5 col-sm-6 col-xs-12'>
+                                                                <button name="button" type="submit"
+                                                                    class="primary-button btn-block center nomargin"
+                                                                    data-disable-with="..."><span>Send now</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class='hide js-ca-data'></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-md-4 ev-contact-form' style='margin-bottom: 96px;'>
+                                <div class='contact-section clearfix' id='contact-form'>
+                                    <h2 class='form-title none'>Contact Agent</h2>
+                                    <form action="{% url 'core:contact' %}" method="POST"
+                                        class="simple_form leads-component form-styled js-ca-send-leads js-cb-lead-registration"
+                                        >
+                                        {% csrf_token %}
+                                        <input type="hidden" id="contact-us" name="contact-us">
+                                        <div class="control-group string required development_registration_client_name">
+                                            <label class="string required control-label"><abbr title="required">*</abbr> Name</label>
+                                            <div class="controls"><input
+                                                    name="name"
+                                                    class="string required" required="required" aria-required="true"
+                                                    placeholder="Full Name" type="text"/></div>
+                                        </div>
+                                        <div class="control-group email required development_registration_email"><label
+                                                class="email required control-label"
+                                                ><abbr title="required">*</abbr>
+                                                Email</label>
+                                            <div class="controls"><input
+                                                    class="string email required js-ca-prop-lead-email js-ca-prop-message-email"
+                                                    name="email" required="required"
+                                                    placeholder="Email" type="email" /></div>
+                                        </div>
+                                        <div class="control-group tel required development_registration_phone"><label
+                                                class="tel required control-label"
+                                                ><abbr title="required">*</abbr>
+                                                Telephone number</label>
+                                            <div class="controls"><input class="string tel required" name="phone" required="required" placeholder="phone number" type="text"/></div>
+                                        </div>
+                                        <div class="control-group text optional development_registration_message"><label
+                                                class="text optional control-label"
+                                                >Message</label>
+                                            <div class="controls"><textarea class="text optional"
+                                                name="message"></textarea></div>
+                                        </div>
+                                       
+                                        <div class='legal-consent'>
+                                            <div class='legal-text bottommargin-sm'>I agree to the storage and use of my
+                                                data according to the privacy policy and agree to the processing of my
+                                                data by the provider to answer my contact request or request for
+                                                information. I can revoke my consent
+                                                at any time for the future.</div>
+                                            <div class='legal-links'>
+                                                <span class='privacy-policy'>
+                                                    <a target="_blank" href="">View privacy policy</a>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <button style="border-color: #eb0a0a; background-color: #eb0a0a !important;" type="submit" class="primary-button btn-block contact-submit submit-anti-spam topmargin-sm nobottommargin">Send Message</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class='section nomargin nopadding'>
+                    <input disabled id='property-map' type='hidden'>
+                    <input type="hidden" name="lat" id="lat" value="49.0299175" class="property-location"
+                        data-geo="lat" />
+                    <input type="hidden" name="lng" id="lng" value="1.9375004" class="property-location"
+                        data-geo="lng" />
+                    <input type="hidden" name="circle_color" id="circle_color" value="#eb0a0a" />
+                    <div class='render-map' style='height: 500px;'></div>
+                    
+                    </input>
+                </section>
+            </div>
+            <div class='hide mixpanel-ready-event' data-category='corporate_site'
+                data-check-to-referer-categories='true' data-development-id='460312' event='view_project'></div>
+
+            <div class='hide'
+                data-ca-development='{"app":"Showcase","page-type":"Property Details","currency":"USD","language":"en","area-unit":"acre","listing-customer":"Engel \u0026 Völkers","listing-customer-id":57,"listing-owner":"Engel \u0026 Völkers","listing-owner-id":57,"listing_id":["pxs:460312"],"listing_mls_number":"","listing_title":"Château du XVIII siècle style Mansart","listing_status":"active","listing_types":["Equestrian","Lots and Land","Lakeside","Farm \u0026 Agricultural","Historic Estate"],"listing_country":"FR","listing_state":"Île-de-France","listing_city":"Condécourt","listing_address":" Rue de la Maison Blanche","listing_postcode":"95450","listing_price_usd":"93522687.91","listing_cover_image_url":"https://res.cloudinary.com/pxd-production/image/upload/v1662559514/i9wohonsba3bch3vpbim.jpg","listing_logo_development_url":"","listing_report_cover_url":"","seller_name":"Gaïané Martinico","seller_id":["pxs:775153"],"seller_email":"gaiane.martinico@engelvoelkers.com","seller_status":"Active"}'
+                id='ca-dev-js'></div>
+            <div class='hide'
+                data-ca-agent='{"app":"Showcase","page-type":"Property Details","language":"en","agent-customer":"Engel \u0026 Völkers","agent_id":["pxs:775153"],"agent_office":"Engel \u0026 Völkers - Paris","agent_license_number":"","agent_type":["agent"],"agent_country":"FR","agent_state":"Île-de-France","agent_city":"Paris","agent_address":"24 Rue de Berri","agent_postcode":"","agent_areas_served":""}'
+                id='ca-agent-js'></div>
+            <div class='hide'
+                data-pixel-event-data='{"content_type":"home_listing","content_ids":[],"addr1":"Rue de la Maison Blanche, Condécourt, Val-d&#x0027;Oise, France","city":"Condécourt","region":"Île-de-France","country":"FR"}'
+                data-pixel-event='ViewContent' id='fb-pixel-js'></div>
+            <div class='lead-guest-error hide' data-notify-close='true'
+                data-notify-msg="&lt;i class='icon-remove-sign'&gt;&lt;/i&gt;SUCCESSFULLY SIGNED IN."
+                data-notify-position='bottom-right' data-notify-timeout='15000' data-notify-type='error'></div>
+            <div class='lead-notify-translations hide'
+                data-error="&lt;i class='icon-remove-sign'&gt;&lt;/i&gt;Invalid email/username or password."
+                data-success="&lt;i class='icon-remove-sign'&gt;&lt;/i&gt;SUCCESSFULLY SIGNED IN."></div>
+            <div aria-label='Modal Dialog' class='modal1 mfp-hide' id='leadsModal' role='region'>
+                <div class='block divcenter'>
+                    <button aria-label='Close' class='mfp-close' title='Close (Esc)' type='button'>×</button>
+                    <div class='header'>
+                        <h2 class='nomargin heading-space'></h2>
+                        <h4 class='sub-title'>To download this document and all the documents on the site, we need you
+                            to create or login into an account with your information.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class='modal1 mfp-hide' id='contactLeadModal'>
+                <div class='block divcenter'>
+                    <button class='mfp-close' title='Close (Esc)' type='button'>x</button>
+                    <div class='content'></div>
+                    <div class='message'></div>
+                </div>
+            </div>
+            <div class='modal1 mfp-hide' id='scheduleTourModal'>
+                <div class='block divcenter'>
+                    <button class='mfp-close' title='Close (Esc)' type='button'>x</button>
+                    <div class='header'>
+                        <h2 class='nomargin heading-space'></h2>
+                    </div>
+                    <div class='content'></div>
+                    <div class='message'></div>
+                </div>
+            </div>
+            <div class='modal1 mfp-hide' id='tourModal'>
+                <div class='block divcenter' style='background-color: #FFF; max-width: 600px;'>
+                    <div class='center clearfix' style='padding: 0px;'>
+                        <iframe allowfullscreen='' frameborder='0' height='53' width='90'></iframe>
+                    </div>
+                </div>
+            </div>
+            <div aria-label='Modal Dialog' class='modal1 mfp-hide' id='sendPropertyFileModal' role='region'>
+                <div class='block divcenter'>
+                    <button aria-label='Close' class='mfp-close' title='Close (Esc)' type='button'>×</button>
+                    <div class='header'>
+                        <h2 class='nomargin heading-space'></h2>
+                    </div>
+                    <div class='content'></div>
+                </div>
+            </div>
+            <div aria-label='Modal Dialog' class='modal1 mfp-hide' id='userImprintModal' role='region'>
+                <div class='block divcenter'>
+                    <button aria-label='Close' class='mfp-close' title='Close (Esc)' type='button'>×</button>
+                    <div class='header'>
+                        <h2 class='nomargin heading-space'></h2>
+                    </div>
+                    <div class='content'></div>
+                </div>
+            </div>
+            <div class='hide' id='loading-main'>
+                <div class='center' style='padding: 80px 0px 0px 0px'>
+                    <img src="//dlm2ugoua3jmc.cloudfront.net/assets/icons/ajax-loader-6890bb1bc08536f3a82d35e8e65a5384.gif"
+                        alt="Ajax loader" />
+                </div>
+            </div>
+            <div class='loading-box hide'>
+                <div class='vertical-middle'><img
+                        src="//dlm2ugoua3jmc.cloudfront.net/assets/icons/ajax-loader-v2-ac72645f2d0bd7833be3f79bdf49bfc5.gif"
+                        alt="Ajax loader v2" /></div>
+            </div>
+
+
+            <style>
+                :root {
+                    --Hcolor: #eb0a0a;
+                }
+
+                li>a:hover {
+                    color: var(--Hcolor) !important;
+                }
+
+                li.ui-tabs-active>a {
+                    border-bottom-color: var(--Hcolor) !important;
+                    color: var(--Hcolor) !important;
+                }
+
+                a {
+                    color: var(--Hcolor);
+                }
+
+                a:hover {
+                    color: #444444 !important;
+                }
+
+                .primary-button {
+                    border-color: var(--Hcolor) !important;
+                    background-color: var(--Hcolor) !important;
+                }
+
+                .primary-button:hover {
+                    background-color: var(--Hcolor) !important;
+                }
+
+                .secondary-button:hover {
+                    color: white !important;
+                }
+
+                .primary-button:focus:not(:active) {
+                    background-color: var(--Hcolor) !important;
+                }
+
+                .primary-button:focus:active {
+                    background-color: var(--Hcolor) !important;
+                }
+
+                .owl-carousel .owl-nav [class*=owl-]:hover {
+                    background-color: var(--Hcolor) !important;
+                }
+
+                #header #logged-menu-container #logged-menu .logged-options li a.button-black:hover {
+                    background-color: var(--Hcolor) !important;
+                }
+
+                .property-tag.landing-page-position {
+                    border-color: var(--Hcolor) !important;
+                }
+
+                .btn-download-all-images {
+                    color: var(--Hcolor) !important;
+                }
+
+                .btn-download-all-images:hover {
+                    background-color: var(--Hcolor) !important;
+                }
+            </style>
+
+        </section>
+        <!-- #content end -->
+        <!-- #footer -->
+
+        <footer class='ev-footer nomargin noborder' id='footer'>
+            <div id='copyrights'>
+                <div class='container copyright-links footer'>
+                    <div class='row hidden-sm hidden-md hidden-lg hidden-xl' style='margin-bottom: 20px;'>
+                        <div class='col-xs-12'>
+                            <ul class='mobile-links'>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> About Larkspur </a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Careers</a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Imprint</a></li>
+                                <li><a target="_blank" href="#"><i class='ev-icon-arrow-right'></i> Press</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='row hidden-sm hidden-md hidden-lg hidden-xl'>
+                        <div class='col-xs-12 center-mobile'>
+                            <div id='footer-menu-trigger'>
+                                More
+                                <i class='ev-icon-arrow-down'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row clearfix footer-menu'>
+                        <div id='footer-menu'>
+                            <div class='col-md-2 col-sm-2 col-xs-12 center-mobile'>
+                                <p> Larkspur homes LLC</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="#">About Larkspur </a></li>
+                                    <li><a target="_blank" href="#">Locations</a></li>
+                                    <li><a target="_blank" href="#">Blog</a></li>
+                                    <li><a target="_blank" href="">Press</a></li>
+                                    <li><a target="_blank" href="#">Research</a></li>
+                                    <li><a aria-label="Privacy Policy" target="_blank" href="/privacy-policy">Privacy
+                                            policy</a></li>
+                                    <li><a aria-label="Cookie Policy" target="_blank" href="/cookie-policy">Cookie
+                                            policy</a></li>
+                                    <li><a target="_blank" href="/imprint">Imprint</a></li>
+                                    <li><a target="_blank" href="/disclaimer"><span class="translation_missing"
+                                                title="translation missing: en.disclaimer">Disclaimer</span></a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-12 col-md-offset-1 center-mobile'>
+                                <p>Business divisions</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Residential</a></li>
+                                    <li><a target="_blank" href="">Commercial</a></li>
+                                    <li><a target="_blank" href="">Yachting</a></li>
+                                    <!-- %li= link_to t('engel_volkers.footer.aviation'), 'https://www.engelvoelkers.com/en-lu/aviation/', target: '_blank' -->
+                                    <li><a target="_blank" href="">Polo</a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-2 hidden-xs center-mobile no-title'>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Private office</a></li>
+                                    <li><a target="_blank" href="">GG Magazine</a></li>
+                                    <li><a target="_blank" href="">Charity</a></li>
+                                </ul>
+                            </div>
+                            <div class='col-md-2 col-sm-2 col-xs-12 center-mobile'>
+                                <p>Seller</p>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href="">Sell house</a></li>
+                                    <li><a target="_blank" href="">Let house</a></li>
+                                    <li><a target="_blank" href="">Sell flat</a></li>
+                                    <li><a target="_blank" href="">Let flat</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='col-md-2 col-sm-2 col-xs-12 col-md-offset-1 center-mobile contact-col'>
+                            <p>Contact us</p>
+                            <div class='title-line' style='border-bottom-color: #eb0a0a'></div>
+                            <ul class='contact-info center-mobile'>
+                                <li>
+                                    <i class='ev-icon-phone'></i>
+                                    <a target="_blank" class="telephone" href="tel:+13346351939">+1 (334) 635-1939</a>
+                                </li>
+                                <li class='address'> Larkspur homes LLC</li>
+                                <li class='address'>143 B. Orlando Street</li>
+                                <li class='address'>32802 Florida, USA</li>
+                            </ul>
+                            <!-- <div class='social-media'>
+                                <ul class='center-mobile'>
+                                    <li><a target="_blank" href=""><i class="ev-icon-facebook"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-linkedin"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-instagram"></i></a></li>
+                                    <li><a target="_blank" href=""><i class="ev-icon-youtube"></i></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                
+                    <div class='row-fluid'>
+                        <div class='container'>
+                            <div class='row-fluid'>
+                                <hr>
+                                <div class='fair-housing-ev'>
+                                    <div class='fair-housing-ev' id='rights-reserved'>
+                                        Information on this website is provided by real estate professionals or
+                                        developers and/or their representatives. Prices, details and availability may
+                                        change; please verify any information with a real estate professional or the
+                                        developer. Larkspur homes LLC
+                                        is not responsible for any errors or omissions. This is not an offer to sell.
+                                        Larkspur homes LLC fully supports the principles of the Fair Housing Act and
+                                        the Equal Opportunity Act.
+                                        <br /><br /> <a href=""
+                                            target="_blank">Powered by: ©2022 Larkspur Homes LLC | All Rights
+                                            Reserved</a>
+                                    </div>
+                                    <div class='fair-housing-ev-logo'>
+                                        <!-- <img src="//dlm2ugoua3jmc.cloudfront.net/assets/logo-fair-housing-550745bf3f94e79c08150d30c4a8ac5e.svg"
+                                                alt="Logo fair housing" /> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='footer-logo'>
+                <small><b> Larkspur homes LLC</b></small>
+                <!-- <img alt="Larkspur homes LLC logo"
+                        src="//dlm2ugoua3jmc.cloudfront.net/assets/favicons/ev/favicon-32x32-b19d8216fbb00a89aab1eaeda182a987.png" /> -->
+            </div>
+        </footer>
+       
+
+        <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+    <!-- #gotoTop.icon-angle-up -->
+    <!-- - Flash modal messages -->
+    <div aria-textledby='myModalLabel' class='fade js-modal modal' id='globalPreferences' role='dialog' tabindex='-1'>
+        <div aria-label='Modal Dialog' class='modal-dialog'>
+            <div class='modal-body center'>
+                <div class='modal-content'>
+                    <div class='modal-header no-border'>
+                        <button aria-label='Close' class='close js-modal-close' data-dismiss='modal'
+                            type='button'>×</button>
+                        <h3 class='it modal-title global-title' id='myModalLabel'>Global Preferences</h3>
+                    </div>
+                    <div class='modal-body nomargin'>
+                        <form action="/language" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden"
+                                value="&#x2713;" />
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='change_language'
+                                        id='language-label'>Language</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><select name="change_language" id="change_language"
+                                        class="selectpicker styled-input" data-live-search="false" data-size="4"
+                                        data-width="100%">
+                                        <option data-icon="flag flag-usa" selected="selected" value="en">English
+                                        </option>
+                                        <option data-icon="flag flag-germany" value="de">Deutsch</option>
+                                        <option data-icon="flag flag-spain" value="es">Español</option>
+                                        <option data-icon="flag flag-france" value="fr">Français</option>
+                                        <option data-icon="flag flag-brazil" value="pt">Português</option>
+                                        <option data-icon="flag flag-china" value="zh-CN">中国（简体）</option>
+                                        <option data-icon="flag flag-japan" value="ja">日本語</option>
+                                    </select></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='currency' id='currency-label'>Currency</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><select name="currency" id="currency"
+                                        class="selectpicker left lg" data-live-search="true" data-size="3"
+                                        data-width="100%">
+                                        <option title="AFN (؋)" value="AFN">Afghan Afghani (AFN)</option>
+                                        <option title="ARS ($)" value="ARS">Argentine Peso (ARS)</option>
+                                        <option title="AUD ($)" value="AUD">Australian Dollar (AUD)</option>
+                                        <option title="BSD ($)" value="BSD">Bahamian Dollar (BSD)</option>
+                                        <option title="BBD ($)" value="BBD">Barbadian Dollar (BBD)</option>
+                                        <option title="BZD (BZ$)" value="BZD">Belize Dollar (BZD)</option>
+                                        <option title="BMD ($)" value="BMD">Bermudian Dollar (BMD)</option>
+                                        <option title="BAM ()" value="BAM">Bosnia Herzegovina Convertible Mark (BAM)
+                                        </option>
+                                        <option title="BWP (P)" value="BWP">Botswana Pula (BWP)</option>
+                                        <option title="BRL (R$)" value="BRL">Brazilian Real (BRL)</option>
+                                        <option title="BGN ()" value="BGN">Bulgarian Lev (BGN)</option>
+                                        <option title="CAD ($)" value="CAD">Canadian Dollar (CAD)</option>
+                                        <option title="KYD ($)" value="KYD">Cayman Islands Dollar (KYD)</option>
+                                        <option title="XPF (Z$)" value="XPF">Cfp Franc (XPF)</option>
+                                        <option title="CLP ($)" value="CLP">Chilean Peso (CLP)</option>
+                                        <option title="CNY (¥)" value="CNY">Chinese Yuan (CNY)</option>
+                                        <option title="COP ($)" value="COP">Colombian Peso (COP)</option>
+                                        <option title="CRC (₡)" value="CRC">Costa Rican Colón (CRC)</option>
+                                        <option title="HRK ()" value="HRK">Croatian Kuna (HRK)</option>
+                                        <option title="CZK (K)" value="CZK">Czech Koruna (CZK)</option>
+                                        <option title="DKK (kr)" value="DKK">Danish Krone (DKK)</option>
+                                        <option title="DOP (RD$)" value="DOP">Dominican Peso (DOP)</option>
+                                        <option title="XCD ($)" value="XCD">East Caribbean Dollar (XCD)</option>
+                                        <option title="EGP ()" value="EGP">Egyptian Pound (EGP)</option>
+                                        <option title="EUR (€)" value="EUR">Euro (EUR)</option>
+                                        <option title="FJD ()" value="FJD">Fijian Dollar (FJD)</option>
+                                        <option title="GBP (£)" value="GBP">Great British Pound (GBP)</option>
+                                        <option title="HKD (HK$)" value="HKD">Hong Kong Dollar (HKD)</option>
+                                        <option title="HUF (Ft)" value="HUF">Hungarian Forint (HUF)</option>
+                                        <option title="ISK (kr)" value="ISK">Icelandic Króna (ISK)</option>
+                                        <option title="INR (₹)" value="INR">Indian Rupee (INR)</option>
+                                        <option title="IDR (Rp)" value="IDR">Indonesian Rupiah (IDR)</option>
+                                        <option title="IQD ()" value="IQD">Iraqi Dinar (IQD)</option>
+                                        <option title="ILS (₪)" value="ILS">Israeli New Shekel (ILS)</option>
+                                        <option title="JMD ()" value="JMD">Jamaican Dollar (JMD)</option>
+                                        <option title="JPY ()" value="JPY">Japanese Yen (JPY)</option>
+                                        <option title="JOD ()" value="JOD">Jordanian Dinar (JOD)</option>
+                                        <option title="KES (KSh)" value="KES">Kenyan Shilling (KES)</option>
+                                        <option title="KWD ()" value="KWD">Kuwaiti Dinar (KWD)</option>
+                                        <option title="MKD (ден)" value="MKD">Macedonian Denar (MKD)</option>
+                                        <option title="MYR (RM)" value="MYR">Malaysian Ringgit (MYR)</option>
+                                        <option title="MXN (MXN)" value="MXN">Mexican Peso (MXN)</option>
+                                        <option title="MAD ()" value="MAD">Moroccan Dirham (MAD)</option>
+                                        <option title="TWD ()" value="TWD">New Taiwan Dollar (TWD)</option>
+                                        <option title="NZD ($)" value="NZD">New Zealand Dollar (NZD)</option>
+                                        <option title="NOK (kr)" value="NOK">Norwegian Krone (NOK)</option>
+                                        <option title="PKR ()" value="PKR">Pakistani Rupee (PKR)</option>
+                                        <option title="PAB (B/.)" value="PAB">Panamanian Balboa (PAB)</option>
+                                        <option title="PEN (S/.)" value="PEN">Peruvian Nuevo Sol (PEN)</option>
+                                        <option title="PHP (₱)" value="PHP">Philippine Peso (PHP)</option>
+                                        <option title="PLN (z)" value="PLN">Polish Złoty (PLN)</option>
+                                        <option title="RON ()" value="RON">Romanian Leu (RON)</option>
+                                        <option title="RUB (руб)" value="RUB">Russian Ruble (RUB)</option>
+                                        <option title="RWF ()" value="RWF">Rwandan Franc (RWF)</option>
+                                        <option title="SAR ()" value="SAR">Saudi Riyal (SAR)</option>
+                                        <option title="SGD ($)" value="SGD">Singapore Dollar (SGD)</option>
+                                        <option title="ZAR (R)" value="ZAR">South African Rand (ZAR)</option>
+                                        <option title="KRW ()" value="KRW">South Korean Won (KRW)</option>
+                                        <option title="SEK (kr)" value="SEK">Swedish Krona (SEK)</option>
+                                        <option title="CHF (CHF)" value="CHF">Swiss Franc (CHF)</option>
+                                        <option title="THB (฿)" value="THB">Thai Baht (THB)</option>
+                                        <option title="TRY (t)" value="TRY">Turkish Lira (TRY)</option>
+                                        <option title="TYR (₺)" value="TYR">Turkish Lira (TYR)</option>
+                                        <option title="UGX (Ush)" value="UGX">Ugandan Shilling (UGX)</option>
+                                        <option title="AED (د.إ)" value="AED">United Arab Emirates Dirham (AED)</option>
+                                        <option title="USD ($)" selected="selected" value="USD">United States Dollar
+                                            (USD)</option>
+                                        <option title="UYU ($U)" value="UYU">Uruguayan Peso (UYU)</option>
+                                        <option title="UZS (лв)" value="UZS">Uzbekistani Som (UZS)</option>
+                                        <option title="VUV (VT)" value="VUV">Vanuatu Vatu (VUV)</option>
+                                        <option title="VEF (Bs.)" value="VEF">Venezuelan Bolívar (VEF)</option>
+                                        <option title="VND (₫)" value="VND">Vietnamese Dong (VND)</option>
+                                        <option title="ZWD (Z$)" value="ZWD">Zimbabwean Dollar (ZWD)</option>
+                                        <option title="ZWL (Z$)" value="ZWL">Zimbabwean Dollar (ZWL)</option>
+                                    </select></div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-md-4 col-xs-4 tright'>
+                                    <label class='min horizontal' for='unit' id='unit-label'>Units</label>
+                                </div>
+                                <div class='col-md-7 col-xs-7'><input type="checkbox" name="unit" id="unit" value="m2"
+                                        data-on-text="Sq M." data-off-text="Acres" data-on-color="light uppercase"
+                                        data-off-color="light uppercase" data-handle-width="47" class="bt-switch" />
+                                </div>
+                            </div>
+                            <div class='row topmargin-sm bottommargin-sm'>
+                                <div class='col-md-7 col-md-offset-4 col-xs-7 col-xs-offset-4 center'>
+                                    <button name="button" type="submit"
+                                        class="secondary-button btn-block center nomargin"><em aria-hidden='true'
+                                            class='icon-line-check'></em>
+                                        <span>Save</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden='true' aria-textledby='myModalLabel' class='modal fade' id='contactColdwellModal' role='dialog'
+        tabindex='-1'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header' style='padding: 30px; background-color: #f8f5fd;'>
+                    <button class='close' data-dismiss='modal' type='button'>×</button>
+                    <h3 class='title-coldwell-login'>
+                        Contact Us
+                    </h3>
+                </div>
+                <div class='modal-body'>
+                    <div class='main-form' style='padding: 30px;'>
+                        <form class="simple_form form-vertical form-styled js-coldwell-contact-us"
+                            id="js-coldwell-contact-us" action="/contact_us.json" accept-charset="UTF-8"
+                            data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input
+                                type="hidden" name="authenticity_token"
+                                value="W+HZbVspnfoZ8MmsPe1/IJ5eqJ1BIZ8IVopc59yIQf1ohNeizkExTOxDVqq8z5BX5A/4+7hnmt4u6jV8FHh64w==" /><input
+                                type="hidden" name="coldwell_contact" id="coldwell_contact" />
+                            <div class="control-group string required contact_us_email">
+                                <div class="controls"><input class="string required styled-input min"
+                                        autocomplete="disabled" inputmode="email" required="required"
+                                        aria-required="true" placeholder="Email" type="text" name="contact_us[email]"
+                                        id="contact_us_email" /></div>
+                            </div>
+                            <div class="control-group string required contact_us_name">
+                                <div class="controls"><input class="string required styled-input min"
+                                        required="required" aria-required="true" placeholder="Full Name" type="text"
+                                        name="contact_us[name]" id="contact_us_name" /></div>
+                            </div>
+                            <div class='row-fluid'>
+                                <div class="control-group text optional contact_us_message">
+                                    <div class="controls"><textarea rows="8" class="text optional styled-input min"
+                                            placeholder="Message" name="contact_us[message]" id="contact_us_message">
+</textarea></div>
+                                </div>
+                            </div>
+                            <div class='recaptcha-container'>
+                                <div class='error'></div>
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                <div class="g-recaptcha" data-sitekey="6Lflws8UAAAAAFz9nHdRA8art71xVSLZnMhQldj3"></div>
+                                <noscript>
+                                    <div style="width: 302px; height: 352px;">
+                                        <div style="width: 302px; height: 352px; position: relative;">
+                                            <div style="width: 302px; height: 352px; position: absolute;">
+                                                <iframe
+                                                    src="https://www.google.com/recaptcha/api/fallback?k=6Lflws8UAAAAAFz9nHdRA8art71xVSLZnMhQldj3"
+                                                    frameborder="0" scrolling="no"
+                                                    style="width: 302px; height:352px; border-style: none;">
+                                                </iframe>
+                                            </div>
+                                            <div style="width: 250px; height: 80px; position: absolute; border-style: none;
+                  bottom: 21px; left: 25px; margin: 0px; padding: 0px; right: 25px;">
+                                                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                    class="g-recaptcha-response" style="width: 250px; height: 80px; border: 1px solid #c1c1c1;
+                    margin: 0px; padding: 0px; resize: none;" value="">
+</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </noscript>
+
+                            </div>
+                            <br>
+                            <div class='row-fluid'>
+                                <input type="submit" name="commit" value="Send"
+                                    class="secondary-button btn-block nomargin" style="width: 53%;" />
+                            </div>
+                            <div class='row-fluid alert-message hide'></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-textledby='myModalLabel' class='fade js-modal modal' id='follow-notification-modal' role='dialog'
+        tabindex='-1'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button class='close' data-dismiss='modal' type='button'>×</button>
+                </div>
+                <div class='modal-body'>
+                    <h1 class='modal-title'>Share Listing</h1>
+                    <div class='modal-message'>
+                        You can share this listing with your leads, contacts or followers from any social media network
+                        or through email, but first, you need to be a follower of the listing to brand the listing with
+                        your information.
+                    </div>
+                    <a class="button primary-button" href="/dashboard_v2/portfolio?development_id=460312">Follow
+                        Listing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #External JavaScripts -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!-- = javascript_include_tag "/javascripts/collabra_analytics" -->
+    <script src="//dlm2ugoua3jmc.cloudfront.net/assets/engel_volkers-1ae74fdaabdf39b1849b17486f3ecbd2.js"></script>
+  
+    <script src="{% static 'javascripts/jweixin-1.2.0.min.js' %}"></script>
+ 
+    <script src="//dlm2ugoua3jmc.cloudfront.net/assets/pxd_locales-1101ff3a67ced1d9851067604a18bde0.js"></script>
+    <script src="{% static 'javascripts/main.js' %}" type="text/javascript"></script>
+</body>
+
+</html>

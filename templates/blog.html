@@ -246,17 +246,10 @@
                             </li>
                         </ul>
                     </section>
-                    <button class="ev-btn" data-toggle="modal" data-target="#contact-modal"
-                        onclick="emitContactModalTrackingEvent()">
-                        Contact Us </button>
                 </div>
             </div>
-            <script type="text/javascript">
-                function emitContactModalTrackingEvent() {
-                    fdc('contactLightboxOpen', null, {});
-                }
-            </script>
-            <form method="post" onsubmit="evm.contact.submit(this, event, 'landingpages','#contact-modal')">
+            <form action="{% url 'core:about-contact' %}" method="post">
+                {% csrf_token %}
                 <div class="modal" id="contact-modal" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -278,45 +271,24 @@
                                     </div>
                                     <div class="ev-row">
                                         <div class="ev-col">
-                                            <input id="contact-first_name" class="ev-input" type="text"
-                                                name="first_name" placeholder="First name (required)" required
-                                                data-validate="required length" minlength="3" maxlength="30"
-                                                oninput="evm.forms.handleInput(this)" />
-                                            <div id="contact-first_name-missing.required" class="hidden">
-                                                <p class="ev-free-form-error-message">Missing required field</p>
-                                            </div>
+                                            <input class="ev-input" type="text"
+                                                name="name" placeholder="First name (required)" required minlength="3" maxlength="30" />
+
                                         </div>
                                         <div class="ev-col">
-                                            <input id="contact-last_name" class="ev-input" type="text" name="last_name"
-                                                placeholder="Last name (required)" required
-                                                data-validate="required length" minlength="3" maxlength="30"
-                                                oninput="evm.forms.handleInput(this)" />
-                                            <div id="contact-last_name-missing.required" class="hidden">
-                                                <p class="ev-free-form-error-message">Missing required field</p>
-                                            </div>
+                                            <input class="ev-input" type="text" name="surname"
+                                                placeholder="Last name (required)" required minlength="3" maxlength="30" />
+
                                         </div>
                                     </div>
                                     <div class="ev-row">
                                         <div class="ev-col">
-                                            <input id="contact-email" class="ev-input" type="email" name="email"
-                                                placeholder="Email (required)" required data-validate="required mail"
-                                                oninput="evm.forms.handleInput(this)" />
-                                            <div id="contact-email-missing.required" class="hidden">
-                                                <p class="ev-free-form-error-message">Missing required field</p>
-                                            </div>
-                                            <div id="contact-email-invalid.format.mail" class="hidden">
-                                                <p class="ev-free-form-error-message group">Invalid format. Expected
-                                                    email.</p>
-                                            </div>
+                                            <input class="ev-input" type="email" name="email"
+                                                placeholder="Email (required)"/>
                                         </div>
                                         <div class="ev-col">
-                                            <input id="contact-phone" class="ev-input" type="text" name="phone"
-                                                placeholder="Phone" data-validate="phone"
-                                                oninput="evm.forms.handleInput(this)" />
-                                            <div id="contact-phone-invalid.format.phone" class="hidden">
-                                                <p class="ev-free-form-error-message group">Invalid format. Expected
-                                                    phone.</p>
-                                            </div>
+                                            <input class="ev-input" type="text" name="phone"
+                                                placeholder="Phone"/>
                                         </div>
                                     </div>
                                     <div class="ev-row">
@@ -329,45 +301,27 @@
                                         <div class="ev-col">
                                             <span class="ev-privacy-hint-new">
                                                 <p>I agree with the processing of my data for the purpose of
-                                                    establishing contact by the <a href="/en-de/private-office/imprint/"
+                                                    establishing contact by the <a href=""
                                                         target="_blank">Larkspur Homes LLC licensing partner</a>. My above
                                                     data may be passed on to a suitable local licence partner from the
-                                                    <a href="https://www.engelvoelkers.com/en-de/company/locations/"
+                                                    <a href=""
                                                         target="_blank">Larkspur Homes LLC Group</a> for the purpose of
                                                     establishing contact. If I provide my telephone number, I agree to
                                                     be contacted via telephone by the locally responsible Larkspur
                                                     Homes LLC Group licence partner.</p><br>
                                                 <p>For details regarding which data the Larkspur Homes LLC licence
                                                     partner stores and what rights you have in this context, please see
-                                                    <a href="/en-de/private-office/privacypolicy/"
+                                                    <a href=""
                                                         target="_blank">here</a>. You can withdraw your consent <a
-                                                        href="mailto:info@private-office.com">here</a> and revoke it for
+                                                        href="mailto:info@larkspur-homes.com">here</a> and revoke it for
                                                     future use at any time.</p><br>
                                             </span>
-                                            <div id="privacy-checkbox-default" class="ev-checkbox ">
-                                                <input id="privacy-checkbox-default-checkbox"
-                                                    class="ev-checkbox-input ev-copy-input-to-overview"
-                                                    linked="privacy-checkbox-default" name="privacy-checkbox-default"
-                                                    type="checkbox" onclick="evm.forms.handleInput(this)" required
-                                                    data-validate="mustBeChecked" />
-                                                <label class="ev-checkbox-input-label"
-                                                    for="privacy-checkbox-default"></label>
-                                                <span class="ev-checkbox-label">
-                                                    I agree to the processing of my data.
-                                                </span>
-                                            </div>
                                             <div id="privacy-checkbox-default-checkbox-missing.required" class="hidden">
                                                 <p class="ev-free-form-error-message">Missing required field</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <input type="hidden" name="formId" value="default_form" />
-                                <input type="hidden" name="node_path" value="private-office/" />
-                                <input type="hidden" name="language" value="en" />
-                                <input type="hidden" name="locale" value='en' />
-                                <input type="hidden" name="country" value="DE" />
-                                <input type="hidden" name="abTestVariantId" value="-1" />
                             </div>
                             <div class="modal-footer hide-when-screen-below-modal-size">
                                 <button type="submit" class="ev-btn">
@@ -375,41 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ev-sticky">
-                        <button type="submit" class="ev-contact-modal-sticky-button hide-when-screen-above-modal-size">
-                            <div class="ev-sticky-button-image"></div>
-                            <div>
-                                Send </div>
-                        </button>
-                    </div>
-                    <script>
-                        $(function () {
-                            $('#contact-modal .modal-content').append('<div class="ev-sticky-button-scrollout-area hide-when-screen-above-modal-size"></div>');
-                        })
-                    </script>
-                    <script>
-                            (function () {
-                                evm.forms.prefillForm('#contact-modal form');
-                                evm.util.attachBlockAndRestoreEventsToModal('contact-modal');
-                                if (window.location.hash === '#contact') {
-                                    evm.util.showModal('#contact-modal')
-                                }
-                            })();
-                        $(window).on('hashchange', function (e) {
-                            if (window.location.hash === '#contact') {
-                                evm.util.showModal('#contact-modal');
-                            } else {
-                                if ($('#contact-modal').hasClass('in')) {
-                                    evm.util.hideModal('#contact-modal');
-                                }
-                            }
-                        });
-                        $('#contact-modal').on('hidden.bs.modal', function () {
-                            if (window.location.hash === '#contact') {
-                                history.pushState("", document.title, window.location.pathname + window.location.search)
-                            }
-                        });
-                    </script>
+                   
                 </div>
             </form>
             <div class="modal" id="contact-submit-success-modal" tabindex="-1" role="dialog">
@@ -514,21 +434,6 @@
                         });
                     })();
             </script>
-            <div class="ev-main-content">
-                <div class="ev-social-media">
-                    <!-- <h2 class="ev-main-content-headline">Follow us on social media</h2> -->
-                    <!-- <div class="ev-social-media-links">
-                        <div class="ev-social-media-link" onclick="evm.trackSocialMediaClick(event, 'INSTAGRAM')">
-                            <a href="" target="_blank"
-                                class="instagram">Instagram</a>
-                        </div>
-                        <div class="ev-social-media-link" onclick="evm.trackSocialMediaClick(event, 'FACEBOOK')">
-                            <a href="" target="_blank"
-                                class="facebook">Facebook</a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
         </div>
     </div>
 
@@ -580,7 +485,7 @@
                                 <li><a target="_blank" href="">Residential</a></li>
                                 <li><a target="_blank" href="">Commercial</a></li>
                                 <li><a target="_blank" href="">Yachting</a></li>
-                                <!-- %li= link_to t('engel_volkers.footer.aviation'), 'https://www.engelvoelkers.com/en-lu/aviation/', target: '_blank' -->
+                                <!-- %li= link_to t('engel_volkers.footer.aviation'), '', target: '_blank' -->
                                 <li><a target="_blank" href="">Polo</a></li>
                             </ul>
                         </div>
@@ -616,14 +521,6 @@
                             <li class='address'>143 B. Orlando Street</li>
                             <li class='address'>32802 Florida, USA</li>
                         </ul>
-                        <!-- <div class='social-media'>
-                            <ul class='center-mobile'>
-                                <li><a target="_blank" href=""><i class="ev-icon-facebook"></i></a></li>
-                                <li><a target="_blank" href=""><i class="ev-icon-linkedin"></i></a></li>
-                                <li><a target="_blank" href=""><i class="ev-icon-instagram"></i></a></li>
-                                <li><a target="_blank" href=""><i class="ev-icon-youtube"></i></a></li>
-                            </ul>
-                        </div> -->
                     </div>
                 </div>
             
@@ -640,7 +537,7 @@
                                     is not responsible for any errors or omissions. This is not an offer to sell.
                                     Larkspur homes LLC fully supports the principles of the Fair Housing Act and
                                     the Equal Opportunity Act.
-                                    <br /><br /> <a href="https://www.collabratechnology.com/enterprise"
+                                    <br /><br /> <a href=""
                                         target="_blank">Powered by: ©2022 Larkspur Homes LLC. | All Rights
                                         Reserved</a>
                                 </div>
