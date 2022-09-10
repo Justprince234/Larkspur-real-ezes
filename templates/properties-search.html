@@ -366,7 +366,7 @@
                                         <div class='card_img'><img class="main-photo" alt=""
                                                 src="{{ property.photo_main.url }}" />
                                         </div>
-                                        {% if property.reserved == True %}
+                                        {% if property.sale == True %}
                                         <div class='property-tag card-position' style='background-color: #eb0a0a; border-color: #eb0a0a'>
                                             Reserved
                                             
@@ -376,6 +376,9 @@
 
                                         </div>
                                         {% endif %}
+                                        <div class='property-tag card-position' style='background-color: blue; border-color: blue'>
+                                            {{ property.status }}
+                                        </div>
                                 
                                     </div>
                                     <div class='info'>
@@ -399,7 +402,6 @@
                             </div>
                             {% endfor %}
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -499,13 +501,16 @@
                             <div class='title-line' style='border-bottom-color: #eb0a0a'></div>
                             <ul class='contact-info center-mobile'>
                                 <li>
+                                    <i class='email'></i>info@larkspur-homes.com
+                                </li>
+                                <br>
+                                <li>
                                     <i class='ev-icon-phone'></i>
                                     <a target="_blank" class="telephone" href="tel:+13346351939">+1 (334) 635-1939</a>
                                 </li>
-                                
                                 <li class='address'> Larkspur homes LLC</li>
-                            <li class='address'>143 B. Orlando Street</li>
-                            <li class='address'>32802 Florida, USA</li>
+                                <li class='address'>143 B. Orlando Street</li>
+                                <li class='address'>32802 Florida, USA</li>
                             </ul>
                             <!-- <div class='social-media'>
                                 <ul class='center-mobile'>
