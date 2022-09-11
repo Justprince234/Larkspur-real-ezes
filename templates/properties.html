@@ -361,6 +361,7 @@
                                 ca-prop-search-criteria='[]' ca-prop-seller-email='paul.gavriani@engelvoelkers.com'
                                 ca-prop-seller-id='["pxs:757850"]' ca-prop-seller-name='Paul Gavriani'
                                 ca-prop-seller-status='Active' class='col-md-4 col-sm-6 col-xs-12 property-card'>
+                                <div class='property-tag card-position' style='background-color: blue; border-color: blue; font-size: larger;'>{{ property.status }}</div>
                                 <a href="{{property.get_absolute_url}}">
                                     <div aria-label='Property' class='wrap' role='region'>
                                         <div class='card_img'><img class="main-photo" alt=""
@@ -376,7 +377,6 @@
 
                                         </div>
                                         {% endif %}
-                                
                                     </div>
                                     <div class='info'>
                                         <div class='main'>

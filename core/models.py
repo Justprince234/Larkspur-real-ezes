@@ -4,8 +4,8 @@ from django.urls import reverse
 
 # Create your models here.
 Status = (
-    ('Sale', 'For Sale'),
-    ('Rent', 'For Rent')
+    ('For Sale', 'For Sale'),
+    ('For Rent', 'For Rent')
 )
 
 class Property(models.Model):
@@ -19,7 +19,7 @@ class Property(models.Model):
     photo_3 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_4 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
     photo_5 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
-    status = models.CharField(choices=Status, default= "Sale", max_length=4)
+    status = models.CharField(choices=Status, default= "For Sale", max_length=10)
     description = models.TextField(null=True, blank=True)
     price = models.CharField(max_length=20)
     number_of_bedroom = models.IntegerField(null=True, blank=True)
