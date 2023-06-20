@@ -14,10 +14,11 @@ from pathlib import Path
 
 import cloudinary
 import cloudinary_storage
+
 import dj_database_url
 
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,8 +87,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
+# }
+
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
+    'default': dj_database_url.parse('postgres://dxdunion7:5OalCvoEkV0N@ep-tiny-hall-010285.us-west-2.aws.neon.tech/larkspur', conn_max_age=600),
 }
 
 # Cloudinary stuff
